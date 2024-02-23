@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="Wqong&#39;s HOME">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://blog.wqong.com.cn/2023/11/20/陆龟饲养大全/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="饲养全书">
+<meta property="og:type" content="article">
+<meta property="og:title" content="陆龟饲养大全">
+<meta property="og:url" content="http://blog.wqong.com.cn/2023/11/20/%E9%99%86%E9%BE%9F%E9%A5%B2%E5%85%BB%E5%A4%A7%E5%85%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="饲养全书">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-11-20T06:10:16.315Z">
+<meta property="article:modified_time" content="2023-07-08T04:41:52.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="宠物">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-favicon.ico" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-favicon.ico">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/redefine-favicon.ico">
+    <!--- Page Info-->
+    
+    <title>
+        
+            陆龟饲养大全 -
+        
+        Wqong&#39;s HOME
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        Wqong&#39;s HOME
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"blog.wqong.com.cn","root":"/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"5rem","h2":"4rem","h3":"2.8rem","h4":"2.5rem","h5":"2.2rem","h6":"2rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":false,"scale":false},"scroll_progress":{"bar":true,"percentage":false},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"https://api.dujin.org/bing/1920.php","dark":"https://api.vvhan.com/api/bing"},"title":"Wqong's Home","subtitle":{"text":["村口的狗叫了，其他狗也跟着叫。但他们不知道为什么叫。","我见过的人越多，我就越喜欢狗！","现在人们有时候骂人为“畜生”，我觉得是对畜生的侮辱。","“枪响了，你看到是谁开的枪了吗？”<br/>“我看不清，他站在道德制高点上，他在阳光下。”"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":80,"backing_speed":40,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","meting":true,"audios":[{"name":"不将就","artist":"李荣浩","url":"https://music.163.com/song/media/outer/url?id=31654343.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000001fi1zG0EjU2u_1.jpg?max_age=2592000"},{"name":"年少有为","artist":"李荣浩","url":"https://music.163.com/song/media/outer/url?id=1293886117.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000004QnEHc3zjC7J_1.jpg?max_age=2592000"},{"name":"麻雀","artist":"李荣浩","url":"https://music.163.com/song/media/outer/url?id=1407551413.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000003P3ByD1n8nBK_1.jpg?max_age=2592000"},{"name":"李白","artist":"李荣浩","url":"https://music.163.com/song/media/outer/url?id=27678655.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000004AhJHV3slLjN_1.jpg?max_age=2592000"},{"name":"喜剧之王","artist":"李荣浩","url":"https://music.163.com/song/media/outer/url?id=29764560.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000001FOctH2oGoAx_1.jpg?max_age=2592000"},{"name":"模特","artist":"李荣浩","url":"https://music.163.com/song/media/outer/url?id=27731176.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000004AhJHV3slLjN_1.jpg?max_age=2592000"},{"name":"不说","artist":"李荣浩","url":"https://music.163.com/song/media/outer/url?id=428375722.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000001Qw0R62Qqi2U_1.jpg?max_age=2592000"},{"name":"紫荆花","artist":"李荣浩","url":"https://music.163.com/song/media/outer/url?id=1959528822.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000004AhJHV3slLjN_1.jpg?max_age=2592000"},{"name":"消愁","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=569200213.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000002xoonH2Bk7FR_1.jpg?max_age=2592000"},{"name":"像我这样的人","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=569213220.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000001n7a82gh6IY_1.jpg?max_age=2592000"},{"name":"一荤一素","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=569200212.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000002VxplL2gXAuH_4.jpg?max_age=2592000"},{"name":"借","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=569214250.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000002iBxBy3bAmCx_2.jpg?max_age=2592000"},{"name":"盛夏","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=569212211.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000002YpJrS1ussoD_2.jpg?max_age=2592000"},{"name":"无问","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=525278524.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000026ttFc17IeE3_1.jpg?max_age=2592000"},{"name":"不染","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=1332489493.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000001mchg2xCFKz_2.jpg?max_age=2592000"},{"name":"无名的人","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=1903149553.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000002mPgSG01LLtu_1.jpg?max_age=2592000"},{"name":"给你给我","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=569200210.mp3","cover":"https://y.qq.com/music/photo_new/T001R300x300M000001BHDR33FZVZ0.jpg?max_age=2592000"},{"name":"平凡的一天","artist":"毛不易","url":"https://music.163.com/song/media/outer/url?id=569214247.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000002HRHRB004tH9_1.jpg?max_age=2592000"}]},"mermaid":{"enable":true,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":50},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Music":{"path":"/music","icon":"fa-solid fa-music"},"Image":{"path":"/masonry/","icon":"fa-solid fa-image"},"Links":{"icon":"fa-regular fa-link","submenus":{"ChatGPT":"https://chat.wqong.com.cn/","Alist":"http://wqong.com.cn:5244/","Labarre":"http://wqong.com.cn:4211/","OwnCloud":"http://pan.wqong.com.cn/owncloud","WiKi.js":"http://wqong.com.cn:33333","思源笔记":"http://wqong.com.cn:12122"}}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":true};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/mylogo52.png">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                Wqong&#39;s HOME
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/music"
+                                        >
+                                    <i class="fa-solid fa-music fa-fw"></i>
+                                    MUSIC
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/masonry/"
+                                        >
+                                    <i class="fa-solid fa-image fa-fw"></i>
+                                    IMAGE
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="fa-regular fa-link fa-fw"></i>
+                                    LINKS
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://chat.wqong.com.cn/">
+                                                    CHATGPT
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="http://wqong.com.cn:5244/">
+                                                    ALIST
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="http://wqong.com.cn:4211/">
+                                                    LABARRE
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="http://pan.wqong.com.cn/owncloud">
+                                                    OWNCLOUD
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="http://wqong.com.cn:33333">
+                                                    WIKI.JS
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="http://wqong.com.cn:12122">
+                                                    思源笔记
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/music"
+                        >
+                            <span>
+                                MUSIC
+                            </span>
+                            
+                                <i class="fa-solid fa-music fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/masonry/"
+                        >
+                            <span>
+                                IMAGE
+                            </span>
+                            
+                                <i class="fa-solid fa-image fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-Links"
+                        >
+                            <span>
+                                LINKS
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-Links">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://chat.wqong.com.cn/">CHATGPT</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="http://wqong.com.cn:5244/">ALIST</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="http://wqong.com.cn:4211/">LABARRE</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="http://pan.wqong.com.cn/owncloud">OWNCLOUD</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="http://wqong.com.cn:33333">WIKI.JS</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="http://wqong.com.cn:12122">思源笔记</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">11</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                
+                
+                <img src="https://wqong.oss-cn-hangzhou.aliyuncs.com/test/sabrina-wendl-QmJDH8gSmq0-unsplash.jpg" alt="陆龟饲养大全" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
+                
+                <div class="w-full flex items-center absolute bottom-0 justify-start">
+                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-bold backdrop-blur-lg rounded-xl border border-border-color ">陆龟饲养大全</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/redefine-avatar.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">Wqong&#39;s HOME</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-11-20 14:10:16</span>
+        <span class="mobile">2023-11-20 14:10:16</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-07-08 12:41:52</span>
+            <span class="mobile">2023-07-08 12:41:52</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%AE%A0%E7%89%A9/">宠物</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>19.6k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>70 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h2 id="1-排酸："><a href="#1-排酸：" class="headerlink" title="1.  排酸："></a>1.  排酸：</h2><p>就是排出尿酸。在野外陆龟将水分储存在肾脏里，代谢形成尿酸。当水分摄取不足或流失过快时（一般由湿度过低或温度过高引起），体内的剩余水分一再被循环利用，久而久之，尿酸形成会过多，会于钙结合，也会与其他有机物质结合（如草酸），形成尿酸结晶（结石）。因此，不当得（过多或过少）补充钙粉或其他矿物质与尿酸结晶也有一定的关系，但最主要的还是水分和蛋白质的摄取量。一般在正常食欲的人工饲养下，1-3天正常排便、排酸周期不超过7-10天一次为正常范围，否则可能有结石的危险。</p>
+<p>排酸与结石的关系：如果你常发现它的排泄物中带有白色或乳白色的膏状尿酸（也有浅绿色的），那就表示它的代谢功能正常，值得高兴。一旦发现长期不排酸或尿酸已经呈块状或颗粒状时，则得注意它的水分（不宜过少）和蛋白质（不宜过多）的摄取，预防形成尿酸结石造成尿道堵塞的危险发生。假如你的饲养方法、环境和食物均正常，也没有其它不良的症状，而它没有排出白色或乳白色稠状的尿酸，那就有可能说明尿酸（尿酸盐）通过微粒晶体的形态随尿排出，使你无法用肉眼察觉到，大可不必太紧张。</p>
+<p>一般结石的初期看不太出来，正常排泄、尿酸呈颗粒状、可能食欲会下降，偶尔同时伸出四肢和脖子；到了中期，排泄次数和份量减少、尿酸变少、并且会排出微粒结石或较大结石、食欲会有所减退，频繁的同时伸出四肢和脖子；到了晚期就会无尿酸、无排泄，食欲明显下降或停食，后肢拖地爬行或少动，严重者死亡。如果条件允许在不能肯定是否有结石时，可以到宠物医院拍张X光片，查看体内是否有结石（拍腹甲）。</p>
+<p>但有些结石，即使环境、排酸和排便都正常也是无法避免和防范的。不能说这样就不正常，因为毕竟是生命，就和每个人体质都不太相同的关系一样。即便养龟再有规可循，每只龟的状态也是不完全一样的。但就怕结石排不出来，彻底堵住尿路和泄殖腔，那就糟糕了。所以我们一直建议常泡澡，增强体内的水合作用和低蛋白质的摄取量以及食物的多纤维和多元化，尽量减少结石在体内的逗留时间。若发现陆龟食欲下降、绝食同时长期不排酸或尿酸呈大小颗粒状时，高温泡澡无效后可试试用水龙头（水温稍高）冲其下腹或反复刷洗（泡澡后用牙刷，由上而下的不断刷腹部，当看见尾巴左右摇摆时，就是要排酸了。），刺激排出存积的结石。再不排用开塞露灌入泄殖腔内，用耳勺在温水中掏掏泄殖腔，看是否感觉到有结石。若有，可轻轻一点一点的掏出。</p>
+<p>人工饲养下，结石几率的高低跟其生理结构和原生地的气候也有一定的关系。例如易结石的陆龟有：苏卡达、印度星龟、欧洲地区陆龟和地鼠龟类。其它陆龟的结石几率则相对较小。</p>
+<p>综合以上观点个人认为，只要正确得当的养龟和预防，看待一些客观上的问题，就用不着“谈石色变”了。</p>
+<h2 id="2-隆背："><a href="#2-隆背：" class="headerlink" title="2. 隆背："></a>2. 隆背：</h2><p>龟背呈一个个小土包一样的形状。严重隆背者，龟背会像金字塔一样，所以叫“金字塔病”。但隆背不能统称为“金字塔病”，一般的起伏不大的隆背可能是因为饲养方式不正确或品种属性不同，而“金字塔病”更趋向于一种畸形，一般野外的发病率较高。</p>
+<p>喂食不正确的食物或食物单一尚可能导致隆背的发生，隆背的发生原因很多，可能是给予过多的蛋白质或生长过快，也可能是钙质或维生素D3给得过少，此外，未给予陆龟直射的阳光也可能产生隆背。单靠UVB的照射是无法完成钙质的转换。若要避免隆背的发生，你应该提供陆龟植物性的主食，并尽量拉高钙磷比例（钙的比例高于磷最好）。如果有办法的话，让你的陆龟直接晒于阳光下，但要记得提供遮荫处以免导致龟龟体内严重缺水。隆背也是一种亚健康的表现，但有些陆龟个体即使在野外也会隆背，例如印度星龟、豹龟、红腿等。只要正确控制好隆背的尺度和观念，通常不会威胁到它们的生命。</p>
+<h2 id="3-晒背："><a href="#3-晒背：" class="headerlink" title="3. 晒背："></a>3. 晒背：</h2><p>利用阳光中的UVB来照射龟体从而使它们体内维生素D3的形成来充分吸收钙质（需在一定空气温度保障下才能充分完成，一般在26-32度之间），UVA促进食欲可健康自然的成长。通常玻璃会阻碍绝大部分的UVB射入，所以建议晒背时须无玻璃阻挡进行。时长在20-40分钟比较适宜并避免正午进行，以免造成灼伤和体内脱水。值得一提的是，很多龟友为了追求品相，怕晒黑背甲或同心盾，便不进行晒背或极少晒背，只在饲养处内提供人工的UVB紫外线。此举无疑是无知可笑的。养龟必须要常无阻挡接触阳光，否则龟很难养好。</p>
+<p>●目前国内所销售的有很多进口品牌的UVB爬行动物生长灯，例如 </p>
+<p>  加拿大 HAGEN （希瑾）2.0或5.0或8.0</p>
+<p>  德国  EUROZOO(欧洲公园) 6.0</p>
+<p>  美国 ZOOMED 5.0或8.0或10.0</p>
+<p>  台湾 ZOOLIFE 5.3或10.2</p>
+<p>  ●由价位来说由便宜到贵的价格排序分别是 EUROZOO-HAGEN-ZOOLIFE-ZOOMED,这些品牌都是经过众多爬友在多年饲养中经过实际使用和应验了对自己的龟有着实际作用和效果的品牌.</p>
+<p>  但目前国内市场上有出现 用国产普通灯管仿冒进口UVB灯出售的现象,以及直接称其为国产UVB 爬虫生长灯,实际使用的是普通照明灯管,均不含一点UVB成分,光谱波长也达不到宠物生长的要求.所以选购时一定要“一问二看三下手”。</p>
+<p>  问——问价格，如果您遇到的UVB灯价格在40-60元左右，有绝对的市场价格的优势请您注意了一定要留心是否是国产的仿冒品或者是所谓的国产UVB。</p>
+<p>  看——您可以要求卖家发给您试用产品的照片，请您仔细查看产品包装是否精细，灯的照射颜色应为淡蓝色而不是普通的白光（特别注意以下有图片进行参考）</p>
+<p>  ●UVB的作用：</p>
+<p>关于UVB灯管一直存在一个使用上的误区，特别是在冬季里。不论是5.0还是8.0或10.0的使用小时数其实都只是一个相对的范围。特别需要注意的是，所谓的小时数都是无遮挡物的净照。以5.0为例，大家认为应该在8小时左右，但如果有遮挡物的话，即使照上80个小时也没有任何作用，同时也减少了UVB灯管的使用寿命。</p>
+<p>  UVB灯管的主要作用就是促进体内维生素D3的形成，从而增加对钙质的吸收。如果定期补充微量的维生素D3，在冬季里可以缓解UVB的使用时间，但它无法取代UVB。因为夏天可以直接利用阳光晒背可充分得使体内维生素D3的形成，而UVB灯管可以缩短照射时间甚至不使用。但在冬季里无法直接晒背，体内的维生素D3便会缺乏，单一的使用UVB灯管照射很难充分得使维生素D3形成。除非是挪窝硬照，此举无疑是相当麻烦的，控制不好很容易殃及眼部和皮肤组织。如果能定期补充微量的专用维生素D3合剂再加上UVB灯管中的UVB和UVA照射，可以达到事倍功半的效果。  </p>
+<p>  以上灯管均以距龟背25-40公分为最佳照射距离。通常9-12个月更换一次。</p>
+<p>  HAGEN UVB 5.0 产品试用 图片，照射光线呈现淡蓝色，微蓝色，光线自然且明亮</p>
+<p>  为普通国产照明灯管（也就是所谓的国产UVB，假UVB）的照射效果，光线呈现白色，且亮度微弱照射的有效距离短</p>
+<p>  请根据您饲养的爬行宠物选择相应的UVB型号，为了您的龟您的蜥蜴宝贝，请您仔细挑选及借鉴</p>
+<p>  UVB 5.0 或6.0灯管：</p>
+<p>  适用于水龟（由于水龟对UVB含量要求不是非常严格在光照不足情况下也可以使用2.0或UVB合成灯泡含UVB4.0的全光谱合成灯既含有UVA促进消化又含有UVB，其他品种龟需要单独选购UVA UVB）——巴西龟、草龟、珍珠龟、中华龟、纳尔逊尾龟&#x2F;火焰龟等。</p>
+<p>  两栖闭壳——黄缘、三线、安布等。</p>
+<p>  陆龟——缅陆、凹甲、印星、缅星、放射、红腿、欧系等热带雨林陆龟。</p>
+<p>  蜥蜴——绿鬣蜥、水龙、丽纹等。</p>
+<p>  变色龙——高冠等。</p>
+<p>  促进龟体内的维生素D3的合成从而充分吸收钙质，使之骨骼发育良好。日照射（无遮挡）时间4-6小时。</p>
+<p>  UVB8.0或10.0灯管：</p>
+<p>  适用于苏卡达、豹龟等沙漠型陆龟，用途同上。</p>
+<p>  蜥蜴——鬃狮蜥、泰加、蓝舌等</p>
+<p>  日照射（无遮挡）时间6-8小时</p>
+<p>PS：有条件的最好是自然的太阳光晒背。</p>
+<h2 id="4-泡澡："><a href="#4-泡澡：" class="headerlink" title="4. 泡澡："></a>4. 泡澡：</h2><p>将龟放在35-50度（也可依不烫手为准）的温水中浸泡30-60分钟，水位最好不超过龟体高度的1&#x2F;3，以免呛水。最好是每天或隔天进行一次。泡澡的主要目的是促进排泄，形成泡澡排泄的条件反射和预防结石。两只及以上陆龟泡澡最好是一龟一盆，利于观察排便或排酸状况以及防止携带传染性病原体的陆龟交叉传染于健康个体。建议冬天最好在饲养箱内进行，同时使用陶瓷加热器或聚热灯在上方照射保温；夏天可以放在阳光下进行，既泡着澡又可保温还能晒背和避免脱水，一举四得。器皿最好使用非金属材料，边缘高于陆龟，面积宁大勿小。</p>
+<p>有龟友说“养陆龟没必要经常泡澡，野外龟哪来的环境泡澡？我家养的XX龟常年不泡也照样活得好好的”。没错，如果单纯只是为了养龟而养龟，那怎么接近自然就怎么来。若为了养宠物而养龟，就不得不考虑一些人的因素了。也就是说，家庭环境下的龟和野外环境生存的龟所处的境地是完全不一样的，所以家庭养龟在某些环节上和野外龟的特性必定是违背的。而且，并不是完全主张要天天泡澡，只是建议给那些容易结石的陆龟常泡澡，将家庭养龟的一些弊端用一些非野外的手段降到最低。这也是养宠物龟的无奈与可悲之处。</p>
+<h2 id="5-缺钙："><a href="#5-缺钙：" class="headerlink" title="5. 缺钙："></a>5. 缺钙：</h2><p>钙质是陆龟生长的重要营养元素之一。如果陆龟长期缺钙外甲会变软、四肢爬行无力、趾甲脱落、食欲下降等病状。缺钙的因素有，喂食单一、缺乏日照及维生素D3、长期未补钙和钙的选择或用量不当。前几种因素已经在这里介绍过了，重点介绍后两种因素：很多龟友为了省钱和省事选用人用的钙质品或墨鱼骨进行补钙，如果使用不当会引发结石的可能，这无疑是很危险的。因为它们不易吸收其中的碳酸钙，其中也含有磷的成分，更加阻碍了对钙的吸收。特别是墨鱼骨，钙磷比例过低。所以建议使用爬虫专用的钙质品；其用量方面不可过多或频繁的补充，吸收不充分也易引发结石。以腹甲10公分的苏卡达为例，每周补充钙粉的使用上限为一次两耳勺的频率和用量。如果你的饲养环境和食物均比较适宜（如可常年接受日照和食物多元化等等），那么补钙的用量和频率可以相对较低。</p>
+<h2 id="6-拒食、停食和填食："><a href="#6-拒食、停食和填食：" class="headerlink" title="6. 拒食、停食和填食："></a>6. 拒食、停食和填食：</h2><p>拒食是指因环境发生变化（包括新龟不开食）或存在初期的炎症而暂时性的不进食表现；停食则是龟在冬眠期间或病症的后期表现。一旦发生拒食，应及时的改善饲养环境（新龟可引诱其开食，例如可采用水果、蒸熟的胡萝卜+南瓜或饲料等做诱饵），或做出相应的治疗措施；填食就是在龟因患疾病不能主动进食的情况下，通过人为的方式掰嘴进行填喂食物。此举操作比较困难，即使成功也只能维持一时的体力和营养，饲主应及时得为其治疗或调整饲养环境从而使之主动进食。</p>
+<h2 id="7-洗菜："><a href="#7-洗菜：" class="headerlink" title="7. 洗菜："></a>7. 洗菜：</h2><p>很多人认为，陆龟在野外也没人给洗食物照样活得很好。没错，但现在的蔬菜有几种你能肯定没撒一点农药的？还有市区内的草坪有几块没被猫狗污染过的？多洗洗泡泡累不死人，看似很简单的环节，一旦疏忽可能会带来你无法挽回的后果！我完全认为，养龟不洗菜便投喂实际上就是让你的龟在慢性自杀。还有需要注意的是蔬菜洗完以后一定要凉一下，把蔬菜上的水分凉干以后在喂，这样防止拉稀。</p>
+<h2 id="8-暴毙："><a href="#8-暴毙：" class="headerlink" title="8. 暴毙："></a>8. 暴毙：</h2><p>龟在无明显的症状下短时间内突然得死亡，称之为暴毙。至于原因，目前还没有一个合理的科学解释。如有知情者请在此讨论，尽量降低暴毙的死亡率。</p>
+<h2 id="9-乌龟与陆龟的区别："><a href="#9-乌龟与陆龟的区别：" class="headerlink" title="9. 乌龟与陆龟的区别："></a>9. 乌龟与陆龟的区别：</h2><p>在**，很多老百姓把龟类（海龟除外）都习惯性得称之为乌龟。这种称呼是极不科学的。因为乌龟只是分布在东亚一些国家里龟科-淡水龟亚科-乌龟属里的三种水龟中的一个物种，它的分类单位是种；而陆龟则是分布在世界各地上龟科-陆龟亚科-各个陆龟属中三十多种陆龟的总称，它的分类单位是亚科。所以说乌龟和任何一种陆龟或其他龟种都是完全不同的两个物种。</p>
+<h2 id="10-判断公母："><a href="#10-判断公母：" class="headerlink" title="10. 判断公母："></a>10. 判断公母：</h2><h3 id="以星龟、缅星、缅陆为例："><a href="#以星龟、缅星、缅陆为例：" class="headerlink" title="以星龟、缅星、缅陆为例："></a>以星龟、缅星、缅陆为例：</h3><p>（1）公龟体型较狭长，母龟则较浑圆；</p>
+<p>（2）公龟尾部较粗且长，母龟则肥短；</p>
+<p>（3）公龟泄殖口离肛盾较远，母龟则相反；</p>
+<p>（4）公龟腹甲凹陷，母龟则平整；</p>
+<p>（5）公龟成长较缓慢，体型也比母龟小。</p>
+<p>（6）有人说將公龟抓起，它的尾巴会微微向前勾起（呈交配姿勢），母龟尾巴则向着两侧，但也不完全绝对正确，谨供参考。</p>
+<h3 id="以红腿、黄腿为例："><a href="#以红腿、黄腿为例：" class="headerlink" title="以红腿、黄腿为例："></a>以红腿、黄腿为例：</h3><p>（1）很难目测分辨性别，甚至从体型及腹甲也无从看起；</p>
+<p>（2）公龟尾巴比母龟扁平，并且具有四个鳞片，为唯一可供辨识的部分。</p>
+<h3 id="以辐射龟为例："><a href="#以辐射龟为例：" class="headerlink" title="以辐射龟为例："></a>以辐射龟为例：</h3><p>（1）从尾巴分辨，但是并不容易判断；</p>
+<p>（2）从腹甲分辨，需要到一定程度大小才能看得出来；</p>
+<p>（3）成年公龟会主动闻对方泄殖孔确认对方性别，母龟则不会；</p>
+<p>（4）公母体型及大小没有特别不一样。</p>
+<h3 id="以苏卡达和豹龟为例："><a href="#以苏卡达和豹龟为例：" class="headerlink" title="以苏卡达和豹龟为例："></a>以苏卡达和豹龟为例：</h3><p>（1）公龟腹甲凹陷，母龟则平坦；</p>
+<p>（2）公龟肛盾开口角度较大，母龟则相反；</p>
+<p>（3）公龟会有以身体撞击其它龟（或同种公龟）的举动，甚至也攻击人及它认为可疑的事物。</p>
+<h3 id="以欧系陆龟为例："><a href="#以欧系陆龟为例：" class="headerlink" title="以欧系陆龟为例："></a>以欧系陆龟为例：</h3><p>（1）公龟尾巴长而粗，母龟则相反；</p>
+<p>（2）公龟发情期个性急躁，公龟间彼此会追撞及互咬；</p>
+<p>（3）公龟体型比母龟小。 </p>
+<h3 id="以靴脚陆龟为例："><a href="#以靴脚陆龟为例：" class="headerlink" title="以靴脚陆龟为例："></a>以靴脚陆龟为例：</h3><p>（1）无法从外观来作区分；</p>
+<p>（2）公龟在遇到同类时，会有频频点头试探对方性别的举动（但是必须长到亚成体以上才会），母龟则不会。 </p>
+<p>PS：A.将龟龟的尾巴拉直，泄殖孔位置超过尾盾边缘，则公龟的成分居高。B.大部分物种的公龟体型都比母龟小，海岛型陆龟（加拉巴戈、亚达伯拉）和苏卡达则相反。C.有些物种的公母体型大小差异性不大，如辐射龟、红腿龟、黄腿龟等。D.大部分物种的公龟都比较活泼好动，母龟则较沉稳。E.大部分物种的公龟到了成熟期，均会有主动嗅对方泄殖孔确认性别的举动。（此环节资料由BEN提供）</p>
+<p>以上判断方法只做为部分亚成体和成体的雌雄鉴别参考，并非一概而论。</p>
+<h2 id="11-判断年龄："><a href="#11-判断年龄：" class="headerlink" title="11. 判断年龄："></a>11. 判断年龄：</h2><pre><code>龟的年龄计算方法，一般以龟背甲盾片上的同心环纹的多少来推算，每一圈代表一个生长周期，即一年。盾片上的同心环纹多少，然后再加1（破壳出生为一年）即是龟的年龄。这种方法只有龟背甲同心环纹清楚时，方能计算比较准确，对于年老龟或同心环纹模糊不清的龟，只能估计推算出它的大概年龄了。另外，人工加温饲养的龟龟由于生长过快，并不适用于这种方法来计算。
+</code></pre>
+<h2 id="12-亚种："><a href="#12-亚种：" class="headerlink" title="12. 亚种："></a>12. 亚种：</h2><pre><code>所谓的亚种是指生物分类学上种以下的分类单位，是种内的一些群体。但彼此在某些形态特征、生理特性、基因频度、染色体结构等方面存在差异且有着不同的地理分布。也就是说某物种的部分族群因长期的生态隔离，外观上与原物种已有显著的不同。多年下来，其体表的色泽、鳞片、皮肤已经有些许的变化。但去除生态隔离后与原物种之间仍能自然混血繁殖者，称为该物种的亚种。 陆龟的亚种归类：动物界——脊索动物门——脊椎动物亚门——爬行纲——龟鳖亚纲——龟鳖目——潜颈龟亚目——龟科——陆龟亚科——各个陆龟属——陆龟种——陆龟亚种。
+</code></pre>
+<h2 id="13-生长线（纹）："><a href="#13-生长线（纹）：" class="headerlink" title="13. 生长线（纹）："></a>13. 生长线（纹）：</h2><pre><code>在人工饲养过程中，由于陆龟生长速度较快，外甲的盾与盾之间开始扩张，其间的色素还来不及形成，便会出现白色或淡黄色及淡粉色的纹路。经过一段时间后，随着色素的增加和角质的形成，生长线（纹）就会慢慢消失。但随着陆龟的生长它仍会出现。生长线（纹）的不断出现说明你的龟在长个，是一种健康的体现。如果生长线（纹）一直没有出现，有可能是因为缺少晒背、补钙或甲体衔接处损坏等现象。
+</code></pre>
+<h2 id="14-生长速度："><a href="#14-生长速度：" class="headerlink" title="14. 生长速度："></a>14. 生长速度：</h2><pre><code>同一物种内，每只龟的生长速度因个体差异（包括基因、体质、健康等不同因素）都是不太一样的，也是正常的；不同的物种之间的生长速度也不能以各自的生长速度来判定谁快谁慢，因每一物种的生长速度是根据成体体型大小而定的，如苏卡达和印度星龟的关系比较。另外要知道一点，龟是一种寿命较长的动物，自然的生长速度本身就不快。人工饲养下，不要嫌它们长得慢而“拔苗助长”式的饲养，或为了追求大或白而拼命的饲喂。表面上觉得很爱龟，其实是长期增加各器官的负担加速衰竭的进程而损害了它们的健康，性早熟就属于常见现象。还例如苏卡达、印度星龟生长过快会出现结石、隆背等现象；豹龟生长过快会出现肋盾和缘盾之间的环绕区域黑色素跟不上，只形成一圈环绕的宽幅白区（就是所谓的“白豹”），以及四肢相对较细和头部相对较小等现象。故建议饲主们，尽量避免每天都大量得喂食或经常补充一些营养品，长得过快并非是一件好事！反过来，经常饿上两三天（健康的个体）对它们的长期健康是利大于弊的。
+</code></pre>
+<h2 id="15-混养："><a href="#15-混养：" class="headerlink" title="15. 混养："></a>15. 混养：</h2><pre><code>将两种或两种以上的陆龟放在一个饲养箱内进行饲养。其最基本的原则是饲养温湿度和体型相近的、无传染疾病（包括肺炎、感冒、肿颈病、内外寄生虫病等）的、不同物种没有攻击习惯的陆龟可长期混养。其优点是饲养省事、省空间；其缺点是不易准确判断个体的排泄物状况，特别是粪便及排酸状况，从而影响判断个体的健康问题。
+</code></pre>
+<h2 id="16-护甲："><a href="#16-护甲：" class="headerlink" title="16. 护甲："></a>16. 护甲：</h2><pre><code>当龟甲显得暗淡无光时，多半说明体内缺乏营养或接受紫外线稀少，属于一种亚健康表象。因此通过龟甲的光泽度，多少可以折射出它们的健康体现。所以当龟甲长期处于暗淡、无光或干燥时，饲主要采取多种食物的供给和充足的紫外线照射以及良好的饲养环境。维生素AD或AE胶丸（涂抹）可作为辅助用剂。
+</code></pre>
+<h2 id="17-错甲（少甲）："><a href="#17-错甲（少甲）：" class="headerlink" title="17. 错甲（少甲）："></a>17. 错甲（少甲）：</h2><pre><code>龟在孵化过程中，由于基因突变或遗传基因导致盾甲的不规则排列或缺少盾甲，属于一种天生的病态畸形。存在此类现象的陆龟无法再恢复原貌，生长速度也较缓慢，但不会威胁到生命。通常数量较少。
+</code></pre>
+<h2 id="18-白化和黄化："><a href="#18-白化和黄化：" class="headerlink" title="18. 白化和黄化："></a>18. 白化和黄化：</h2><pre><code>龟在孵化过程中，基因缺失导致无法产生或极少产生黑色素，使整个外甲或四肢呈淡黄色，眼珠多为红色或少数的黑色。存在此类现象的陆龟无法再恢复原貌，生长速度也较缓慢，寿命也相对很短。通常数量极少，但国外存在人工繁殖的个体。
+</code></pre>
+<h2 id="19-颈盾："><a href="#19-颈盾：" class="headerlink" title="19. 颈盾："></a>19. 颈盾：</h2><pre><code>位于背甲椎盾的前方，嵌于左右两片缘盾之间的一枚小甲片。有些个体的颈盾会在缘盾的腹面。而有些龟则没有颈盾，例如印度星龟、苏卡达和豹龟等。颈盾有时也是区别样子相近而物种不同的陆龟标志之一。如，亚达伯拉有颈盾，而加拉帕戈没有；缅甸陆龟有颈盾，部分西里贝斯陆龟和多数印度陆龟则没有。
+</code></pre>
+<h2 id="20-龟吸："><a href="#20-龟吸：" class="headerlink" title="20. 龟吸："></a>20. 龟吸：</h2><pre><code>龟鳖以颈和四肢的伸缩运动而产生呼吸，先呼气，后吸气，这种特殊的呼吸方式叫做“咽气式”呼吸，简称龟吸。我们应用医学解剖方法对实验龟进行分析，发现支气管不是逐级分枝**肺组织，左右支气管直接大开口于肺的中央空腔，从网络面游离出来的小支报导管口开放，在中央空腔形成支气管大口对小口的特殊交换气体方式；薄层肺组织由细小支气管网络面支撑，悬浮于中央空腔和背甲下气囊之间，构成了龟的奇特呼吸器官。龟的颈部和四肢伸缩运动，实际不是压迫肺组织，而是压迫左右气囊，促使中央空腔的支气管进行气体交换.咽气式龟吸的基础是龟肺发育不良，气囊和中央空腔弥补了龟肺的呼吸功能。 如果你的爱龟常点头，伸缩四肢， 那它是在呼吸。陆龟除了用肺呼吸之外。它们也会用皮肤呼吸。（此环节资料由atits提供）
+</code></pre>
+<h2 id="21-CB（captive-breed）和WC（wild-caught）："><a href="#21-CB（captive-breed）和WC（wild-caught）：" class="headerlink" title="21. CB（captive-breed）和WC（wild-caught）："></a>21. CB（captive-breed）和WC（wild-caught）：</h2><pre><code>在这里是指人工繁殖（孵化）的陆龟个体和野生被捕捉住的陆龟个体。CB个体相对WC个体更能快速的适应人工环境，相对不挑食，也极少存在体内外寄生虫和其他细菌疾病现象。所以尽量选择CB个体或经过一段人工饲养的WC个体饲养。
+</code></pre>
+<h2 id="22-过冬设备"><a href="#22-过冬设备" class="headerlink" title="22. 过冬设备"></a>22. 过冬设备</h2><p>加热膜：使地表温度提高，采取腹部加温，可二十四小时使用。通常垫在躲藏穴的垫材下面最有效（不可直接接触龟体）。如有裂缝必须及时更换且不可接触水源。一般在爬虫店（网）有售。</p>
+<p>陶瓷加热器或红色夜灯（可选）：空气加热，可根据室内温度而选择，适用于整个冬季。底座必须是陶瓷的，接线最好使用粗线。一般的爬虫店有售。一般在爬虫店（网）或灯具市场有售。</p>
+<h2 id="23-饲养箱"><a href="#23-饲养箱" class="headerlink" title="23. 饲养箱"></a>23. 饲养箱</h2><p>给环境加温保温及为龟带来安全感，使用木质或其它无放射、无害气体、保温材料的通风良好的箱子，并且前门下最好配有至少10公分高的箱槛，以免龟龟爬出造成摔伤或着凉。值得留意的是，一定要在你想好养何种龟后再购买或**木箱，像苏卡达、豹龟或亚达伯拉等长速惊人的大型龟一定要尽可能得配置较大的木箱，最好不小于0.8平方米的面积，免得大了后造成饲养空间紧张。可订做或到爬虫店（网）购买成品。 </p>
+<h2 id="24-暂时无人饲养（短期）之对策："><a href="#24-暂时无人饲养（短期）之对策：" class="headerlink" title="24. 暂时无人饲养（短期）之对策："></a>24. 暂时无人饲养（短期）之对策：</h2><pre><code>如果您和家人准备长时间出门，有以下办法参考安置龟龟：
+</code></pre>
+<p>（1）寄养在朋友或亲戚家中。箱子若不很大，最好搬过去。寄养前务必要嘱咐养龟的各个环节，以免发生不开心的事。</p>
+<p>（2）携带它们同往。首先要找一个小筐或比较大的鞋盒，垫上报纸或其它吸水材料，四周要打多个通风孔。最好带上加热垫，当地气温较低的时候可垫在垫材的下面。若您的龟太大或太多，最好寄养或滞留家中。</p>
+<p>（3）留在原地。如果上面两种办法都不可行，就只有留在原地。在走之前必须做一些准备，一是保证水源充足。水盆加满是必须的，若您的龟需要高湿度，可放个盛满水的小盆在里面；二是食物的充足。走之前放一个或一个以上的甘蓝菜和胡萝卜。甘蓝类的蔬菜是层层包起来的，可预防水分的流失，胡萝卜可长时间存放。都不贵，还能治治挑食。三是环境的准备和检查，其中包括通风要畅、保证温度、电路是否安全等等。最好把垫材统统换成报纸（多层），那样您回来后比较容易清理粪便。</p>
+<h2 id="25-专用饲养营养品"><a href="#25-专用饲养营养品" class="headerlink" title="25. 专用饲养营养品"></a>25. 专用饲养营养品</h2><ol>
+<li><h3 id="爬虫专用钙粉："><a href="#爬虫专用钙粉：" class="headerlink" title="爬虫专用钙粉："></a>爬虫专用钙粉：</h3>以腹甲10公分陆龟的为例，每次两耳勺，和水用吸管灌服。平均每周一次。补充人工饲养下食种少所缺乏的钙质。因冬季无法直接晒背减缓对钙质的吸收，可相对减少钙用量和使用频率。一般在爬虫店（网）有售</li>
+</ol>
+<h4 id="A-钙于体内的存在形式"><a href="#A-钙于体内的存在形式" class="headerlink" title="A. 钙于体内的存在形式"></a>A. 钙于体内的存在形式</h4><p>  要补钙，首先要了解钙生物体内的钙大多是以离子形式广泛的存在于血液，体液，神经细胞，以及骨骼细胞中而真正沉积在骨骼上的钙的量并不大，这是因为骨骼细胞对钙离子的置换并不频繁简单的说生物体内的钙是存在＂沉积的钙＂与＂游离的钙＂互动平衡的状态，所以非常规的钙质摄入会打破这样的平衡，引起机体的病症。</p>
+<h4 id="B-钙的吸收与沉积"><a href="#B-钙的吸收与沉积" class="headerlink" title="B. 钙的吸收与沉积"></a>B. 钙的吸收与沉积</h4><p>  钙的沉积并非如我们想象中那样是把吃进去的钙直接置换到骨骼细胞上正确的形式应该是血液中的钙离子沉积到骨骼上，而摄入的钙只是以离子形式<strong>血液，体液，神经细胞与骨骼细胞中而已在钙的沉积过程中维生素Ｄ３起到了至关重要的作用，简单的说，维生素Ｄ３的前体在肝脏经紫外线照射后被活化，进而才能指导血液中的钙离子与骨骼细胞的钙的置换所以说维生素Ｄ３不可缺，而阳光更不可缺！在这里我要明确一点的是，市售的各种维生素Ｄ３产品无一例外均是Ｄ３的前体他们的作用至多只能溶解钙，从而让机体更好的吸收钙离子</strong>血液，而钙于骨骼细胞上的沉积是非光照不可实现的！</p>
+<p>  在维生素的作用之外另有许多矿物质帮助骨骼细胞的形成，其中最重要的非磷元素莫属！但是需要强调的是，陆龟对磷的需求有别于其他生物（主要是哺乳动物）大家可以仔细的看看人用的钙质补充剂，其上会有明确的标识表明　钙：磷＝１：４～５这正是大多动物所需的钙磷比,但是陆龟却并不需要那么高的磷含量，他们只需要１：１～２的钙磷比即可，甚至过高的磷含量会阻碍陆龟骨骼细</p>
+<p>胞的形成！这也是为什么市售的爬行动物专用钙粉中一般只明确的标识钙的含量约９７～９９％而不标识磷的含量，不是商家偷工减料而是合情合理。说到这里我可以明确的告诉大家喂陆龟人用钙质添加剂和墨鱼骨都是起不到太大作用的！因为钙磷比不符合陆龟的需要，当然还有胡萝卜为什么要喂但是不能常喂，因为胡萝卜中磷的含量较高，长期摄入会破坏体内的钙磷比。</p>
+<h4 id="C-钙的给予量"><a href="#C-钙的给予量" class="headerlink" title="C. 钙的给予量"></a>C. 钙的给予量</h4><p>  说了这么多，直到这里才和我们的饲养切实相关呵呵不好意思地球人都知道，陆龟在野外是靠啃食土块来补充钙与矿物质的！但是他们并不是时时刻刻都在啃土！一般来说只有在生长期中的个体（即出现生长纹的个体）才会对钙有过高的要求我在放养的时候确切发现个体在出现生长纹的一段时间中会有明显的啃食坚硬物体的行为，这一现象在平时并不常见而此时我会增加钙的给予，一般是每隔５天补充一次，每次１～４耳匙（依龟龟大小区别）请注意，每隔５天一次已经很频繁了！</p>
+<p>  前文已经提到骨骼细胞对钙的置换并不频繁，所以说，常规个体对钙的需求量靠食物就可以满足了如果你能够保证足够多样的食物种类的话，对于常规个体来说就没必要再刻意的补充钙质了，食物中的钙已经足够了而想必大多数的饲养者都不能满足足够多样的食物种类，其实也不必着急，对于常规个体来说２～３周补一次钙是足够的！过于频繁的投喂只能加重机体的负担，有害无益！特别强调的是，如果是刚进手的个体，请不要急于补钙！因为你甚至尚未确切了解他的健康状况！特别是对于虚弱个体或者肠胃并不健康的个体，人工钙质的给予有时甚至是致命的！所以请务必在饲养一段时间后确保个体绝对健康的情况下再予以补钙。</p>
+<h4 id="D-辅助条件"><a href="#D-辅助条件" class="headerlink" title="D. 辅助条件"></a>D. 辅助条件</h4><p>  如果你喜欢户外运动的话毫无疑问你的骨骼肯定很强健，陆龟也一样！给予充足的光照，刺激他们多多运动势必会让龟龟们的骨骼强健结实！所以，只要条件允许，几个月的放养对龟龟的生长是大有助益的！请注意，ＵＶＢ永远取代不了阳光！只有沐真正的日光浴才能最有效的帮助个体生长！</p>
+<h4 id="E-缺钙所致的常见疾病"><a href="#E-缺钙所致的常见疾病" class="headerlink" title="E. 缺钙所致的常见疾病"></a>E. 缺钙所致的常见疾病</h4><h5 id="a-软骨病"><a href="#a-软骨病" class="headerlink" title="a. 软骨病"></a>a. 软骨病</h5><p>  病症：壳甲柔软，无力活动与进食</p>
+<p>  病因：缺钙</p>
+<p>  治疗：其实到达所述的病症时基本已经回天乏术了！唯一的办法就是补充离子态的钙，一般用葡萄糖酸钙注射，但是其实也是无济于事的，此病最重要的是预防！平时注意钙的正常给予才是关键。</p>
+<h5 id="b-肌肉抽搐"><a href="#b-肌肉抽搐" class="headerlink" title="b. 肌肉抽搐"></a>b. 肌肉抽搐</h5><p>  病症：肌肉抽搐，行动不便</p>
+<p>  病因：其实这病的病因并非缺钙这么简单，缺钙只是一方面，另外还有体内电解质的失衡引起钙离子的大量流失．大家都知道，钙离子是重要的神经递质，异常的流失会造成肌肉的抽搐！可是肌肉与神经中的钙离子并非来源于直接的摄入，与骨骼中的钙一样，他们也来源于血液中的钙离子，这一过程是靠电解质平衡的！</p>
+<p>  治疗：补充神经与骨骼肌的钙离子需要靠电解质来平衡，所以治疗的方法就是补充电解质！可以用灌服或泡水的给药途径。</p>
+<ol start="2">
+<li><h3 id="爬虫专用维生素D3电解质合剂："><a href="#爬虫专用维生素D3电解质合剂：" class="headerlink" title="爬虫专用维生素D3电解质合剂："></a>爬虫专用维生素D3电解质合剂：</h3>以腹甲10公分陆龟为例，每次一滴，平均两周一次。电解质是指金属元素（镁、钾、钠、钙）经脱水而流失，尤其在压力环境下。电解质及维生素D3添加剂可维持动物体内电解质的平衡，并能补充维生素D3，以帮助被捕获的爬行动物预防和治疗因UV-光线照射不足引起的新陈代谢性骨骼疾病。以加拿大HAGEN（希瑾）为例，每0.1毫升含：维生素D3-35iu，钙0.2毫克，镁0.1毫克，钾0.8毫克，葡萄糖7.5毫克。一般在爬虫店（网）有售。</li>
+</ol>
+<p>如暂时没有，对缺钙个体也可微量灌服阿法骨化醇胶丸（活性维生素D3）。一般在药店有售。</p>
+<ol start="3">
+<li><h3 id="爬虫专用维生素粉："><a href="#爬虫专用维生素粉：" class="headerlink" title="爬虫专用维生素粉："></a>爬虫专用维生素粉：</h3><p>以腹甲10公分的陆龟为例，每次两耳勺，和水用吸管灌服。平均每十天一次。补充人工饲养下食种少所缺乏的综合维生素，可增加免疫能力并预防多种疾病发生。一般在爬虫店（网）有售。</p>
+</li>
+<li><h3 id="爬虫专用矿物质："><a href="#爬虫专用矿物质：" class="headerlink" title="爬虫专用矿物质："></a>爬虫专用矿物质：</h3><p>以腹甲10公分的陆龟为例，每次一耳勺，和水用吸管灌服。平均两月一次。补充人工饲养下食种少所缺乏的矿物质。能弥补饲养不当造成的矿物资源不足，使陆龟健康成长。一般在爬虫店（网）有售。</p>
+</li>
+<li><h3 id="专用陆龟饲料："><a href="#专用陆龟饲料：" class="headerlink" title="专用陆龟饲料："></a>专用陆龟饲料：</h3><p>以腹甲10公分的陆龟为例，每顿5-10粒，平均每周一顿。增加各种营养及微量元素，泡水后直接喂食或拌在其它食物中喂食。含蛋白较高的饲料适合杂食性品种，如：缅陆、红腿、黄腿、凹甲、靴脚、蛛网属、折背属等；含蛋白适中的饲料适合草食性品种，如：印星、缅星、苏卡达、豹纹、放射、亚达、欧陆等。但绝对不可以做为主食或高频饲喂，以免造成营养过剩影响健康。推荐品牌：SUDO、ZOOMED、JBL等无色素、无甜味剂龟粮。一般在爬虫店（网）有售。</p>
+<h2 id="26-非专用治疗营养品"><a href="#26-非专用治疗营养品" class="headerlink" title="26. 非专用治疗营养品"></a>26. 非专用治疗营养品</h2><ol>
+<li><h3 id="复方电解质葡萄糖："><a href="#复方电解质葡萄糖：" class="headerlink" title="复方电解质葡萄糖："></a>复方电解质葡萄糖：</h3></li>
+</ol>
+<p>能补充体内水分、糖分和电解质，具有补充体液、供给能量、补充血糖、强心利尿、解毒等作用。能直接参与新陈代谢过程。在消化道中，葡萄糖比任何其他单糖都容易被吸收，而且被吸收后能直接为龟体组织利用。适用于大部分疾病的营养补给。</p>
+<ol start="2">
+<li><h3 id="多维葡萄糖："><a href="#多维葡萄糖：" class="headerlink" title="多维葡萄糖："></a>多维葡萄糖：</h3></li>
+</ol>
+<p>作用和适用范围基本同上。</p>
+<ol start="3">
+<li><h3 id="葡萄糖酸钙："><a href="#葡萄糖酸钙：" class="headerlink" title="葡萄糖酸钙："></a>葡萄糖酸钙：</h3></li>
+</ol>
+<h2 id="27-较适用于缺钙或烂甲疾病的营养补给。"><a href="#27-较适用于缺钙或烂甲疾病的营养补给。" class="headerlink" title="27. 较适用于缺钙或烂甲疾病的营养补给。"></a>27. 较适用于缺钙或烂甲疾病的营养补给。</h2><p>常见陆龟饲养温湿度及饲养难度因素：</p>
+<ol>
+<li><h3 id="缅甸陆龟："><a href="#缅甸陆龟：" class="headerlink" title="缅甸陆龟："></a>缅甸陆龟：</h3><p>在国内主要分布在广西及云南，国外主要分布于尼泊尔、印度、泰国、越南、马来西亚、孟加拉国、缅甸和柬埔寨等国。成年背甲35公分左右。白天温度26<del>28度，夜晚20</del>24度；湿度60%~70%，使用UVB5.0。杂食性，较易养。易患烂甲、肠胃炎、内外寄生虫、缺钙等病。</p>
+</li>
+<li><h3 id="印度陆龟："><a href="#印度陆龟：" class="headerlink" title="印度陆龟："></a>印度陆龟：</h3><p>主要分布于印度西部、印度尼西亚的苏拉威西岛和哈马赫拉岛。成年背甲25公分左右。白天温度26<del>28度，夜晚20</del>24度；湿度60%~80%，使用UVB5.0。杂食性，易养。易患烂甲、肠胃炎、内外寄生虫等病。</p>
+</li>
+<li><h3 id="印度星龟："><a href="#印度星龟：" class="headerlink" title="印度星龟："></a>印度星龟：</h3><p>主要分布于印度、巴基斯坦、斯里兰卡等地。成年背甲20公分左右。白天温度28<del>32度，夜晚24</del>26度；湿度40%~50%，使用UVB5.0。草食性，较难养。易患呼吸系统疾病、结石、肠胃炎、体内寄生虫等病。</p>
+</li>
+<li><h3 id="缅甸星龟："><a href="#缅甸星龟：" class="headerlink" title="缅甸星龟："></a>缅甸星龟：</h3><p>主要分布于缅甸。成年背甲30公分左右。白天温度30<del>32度，夜晚24</del>26度；湿度50%~70%，使用UVB5.0。草食性，较易养。易患肠胃炎、内外寄生虫等病。</p>
+</li>
+<li><h3 id="凹甲陆龟："><a href="#凹甲陆龟：" class="headerlink" title="凹甲陆龟："></a>凹甲陆龟：</h3><p>在我国，主要分布于广西、海南、湖南、云南等；在国外主要分布于缅甸、柬埔寨、马来西亚、泰国等国。成年背甲25公分左右。白天温度25-28度，夜晚20-22度；湿度70%-80%，使用UVB5.0。杂食性，难养，易患挑食、烂甲、肠胃炎、内外寄生虫等病。</p>
+</li>
+<li><h3 id="靴脚陆龟："><a href="#靴脚陆龟：" class="headerlink" title="靴脚陆龟："></a>靴脚陆龟：</h3><p>棕靴分布于印度南端、孟加拉、缅甸、泰国、苏门答腊及婆罗洲；黑靴分布于印度北部至泰国中部。成年背甲55公分左右。白天温度26-28度，夜晚20-23度；湿度70%-80%，使用UVB5.0。杂食性，较易养，易患烂甲、肠胃炎、内外寄生虫等病。</p>
+</li>
+<li><h3 id="红腿象龟："><a href="#红腿象龟：" class="headerlink" title="红腿象龟："></a>红腿象龟：</h3><p>分布遍及中美洲南端，以及南美洲的中北部包括巴拿马、哥伦比亚、委内瑞拉、圭亚那、苏里南、法属圭亚那、巴西、玻利维亚、巴拉圭和阿根廷等国。成年背甲30公分左右。白天温度27-30度，夜晚20-24度；湿度70%-80%，使用UVB5.0。杂食性，易养，易患呼吸系统疾病、消化系统、体内寄生虫等病。</p>
+</li>
+<li><h3 id="黄腿象龟："><a href="#黄腿象龟：" class="headerlink" title="黄腿象龟："></a>黄腿象龟：</h3><p>分布于巴西、千里达、哥伦比亚、委内瑞拉、厄瓜多尔、阿根廷。成年背甲55公分左右。白天温度27-30度，夜晚20-24度；湿度70%-80%，使用UVB5.0。杂食性，较易养，易患呼吸系统疾病、体内寄生虫等病。</p>
+</li>
+<li><h3 id="四爪陆龟："><a href="#四爪陆龟：" class="headerlink" title="四爪陆龟："></a>四爪陆龟：</h3><p>国内仅分布于新疆霍城县，国外分布于哈萨克斯坦南部草原地区，以及伊朗、阿富汗、巴基斯坦。成年背甲18公分左右。白天温度27-30度，夜晚20-24度；湿度30%-40%，使用UVB5.0。草食性，易养，易患眼病、呼吸系统疾病、体内寄生虫等病。</p>
+</li>
+<li><h3 id="赫曼陆龟："><a href="#赫曼陆龟：" class="headerlink" title="赫曼陆龟："></a>赫曼陆龟：</h3><p>西部赫曼主要分布于西班牙北部、法国南部、意大利西部；东部赫曼分布于土耳其、南斯拉夫、罗马尼亚、保加利亚、阿尔巴尼亚、希腊及意大利南部。成年背甲25公分左右。白天温度26-29度，夜晚20-22读；湿度40%-50%，使用UVB5.0。草食性，易养，易患结石、消化系统等病。</p>
+</li>
+<li><h3 id="欧洲陆龟："><a href="#欧洲陆龟：" class="headerlink" title="欧洲陆龟："></a>欧洲陆龟：</h3><p>分布于西班牙南部、摩洛哥、伊朗、南斯拉夫、罗马尼亚、土库曼斯坦、俄罗斯、法国南部、意大利、西西里岛、及萨丁尼亚岛。成年背甲18公分左右。白天温度28-30度，夜晚18-22度；湿度35-45%，使用UVB5.0。草食性，易养，易患消化系统等病。</p>
+</li>
+<li><h3 id="豹纹陆龟："><a href="#豹纹陆龟：" class="headerlink" title="豹纹陆龟："></a>豹纹陆龟：</h3><p>主要分布于非洲东部和南部。成年背甲55公分左右。白天温度32-35度，夜晚24-26度；湿度30%-40%，使用UVB8.0或10.0。草食性，较易养，易患挑食、消化系统、体内寄生虫等病。</p>
+</li>
+<li><h3 id="苏卡达龟："><a href="#苏卡达龟：" class="headerlink" title="苏卡达龟："></a>苏卡达龟：</h3><p>主要分布于非洲中部，西起毛里塔尼亚、塞内加尔，向东到埃塞俄比亚。成年背甲70公分左右。白天温度30-34度，夜晚24-26度；湿度40%-50%，使用UVB8.0或10.0。草食性，较易养，易患结石、消化系统、缺钙等病。</p>
+</li>
+<li><h3 id="放射陆龟："><a href="#放射陆龟：" class="headerlink" title="放射陆龟："></a>放射陆龟：</h3><p>分布于马达加斯加岛南部及东南部。成年背甲40公分左右。白天温度27-30度，夜晚22-24度；湿度60%-70%，使用UVB5.0。草食性，易养，易患消化系统等病。</p>
+</li>
+<li><h3 id="蛛网龟："><a href="#蛛网龟：" class="headerlink" title="蛛网龟："></a>蛛网龟：</h3><p>分布于马达加斯加岛西南部海岸。成年背甲15公分左右。白天温度30-32度，夜晚18-22度；湿度70-80%，使用UVB5.0。杂食性，较难养，易患挑食、体内寄生虫等病。</p>
+</li>
+<li><h3 id="饼干龟："><a href="#饼干龟：" class="headerlink" title="饼干龟："></a>饼干龟：</h3><p>分布于非洲东部的肯亚急坦桑尼亚。成年背甲15公分左右。白天温度32-35度，夜晚20-24度；湿度40-50%，使用UVB8.0。草食性，难养，易患挑食、体内寄生虫等病。</p>
+</li>
+<li><h3 id="荷叶折背："><a href="#荷叶折背：" class="headerlink" title="荷叶折背："></a>荷叶折背：</h3><p>分布于波扎那东南部、中非共和国。成年背甲18公分左右。白天温度26-30度，夜晚20-22度；湿度70-80%，使用UVB5.0。杂食性，难养，易患挑食、消化系统、体内寄生虫等病。</p>
+</li>
+<li><h3 id="亚达伯拉象龟："><a href="#亚达伯拉象龟：" class="headerlink" title="亚达伯拉象龟："></a>亚达伯拉象龟：</h3><p>分布于非洲东岸印度洋上的亚达伯拉群岛。成年背甲125公分左右。白天温度28-32度，夜晚22-24度；湿度70-80%，使用UVB5.0。草食性，易养，易患挑食、消化系统、缺钙等病。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="28-陆龟食物营养成分详表"><a href="#28-陆龟食物营养成分详表" class="headerlink" title="28. 陆龟食物营养成分详表"></a>28. 陆龟食物营养成分详表</h2><table>
+<thead>
+<tr>
+<th>食物名称</th>
+<th>热量 (kcal)</th>
+<th>水分 (g)</th>
+<th>粗蛋白 (g)</th>
+<th>粗脂肪 (g)</th>
+<th>醣类 (g)</th>
+<th>粗纤维 (g)</th>
+<th>膳食纤维 (g)</th>
+<th>灰份 (g)</th>
+<th>胆固醇 (g)</th>
+<th>维生素A</th>
+<th>维生素Eα-TE</th>
+<th>维生素B1 (mg)</th>
+<th>维生素B2 (mg)</th>
+<th align="center">烟碱酸 (mg)</th>
+<th>维生素B6 (mg)</th>
+<th>维生素B12 (mg)</th>
+<th>维生素C (mg)</th>
+<th>纳 (mg)</th>
+<th>钾 (mg)</th>
+<th>钙 (mg)</th>
+<th>镁 (mg)</th>
+<th>磷 (mg)</th>
+<th>铁 (mg)</th>
+<th>锌 (mg)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>小白菜</td>
+<td>13</td>
+<td>95.7</td>
+<td>1</td>
+<td>0.3</td>
+<td>2.1</td>
+<td>0.4</td>
+<td>1.8</td>
+<td>0.9</td>
+<td>0</td>
+<td>236.7</td>
+<td>0</td>
+<td>0.02</td>
+<td>0.04</td>
+<td align="center">0.5</td>
+<td>0.03</td>
+<td>0</td>
+<td>40</td>
+<td>40</td>
+<td>240</td>
+<td>106</td>
+<td>15</td>
+<td>37</td>
+<td>1.4</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>芥菜</td>
+<td>19</td>
+<td>94.6</td>
+<td>0.8</td>
+<td>0.5</td>
+<td>3.4</td>
+<td>0.5</td>
+<td>1.6</td>
+<td>0.8</td>
+<td>0</td>
+<td>66.7</td>
+<td>0</td>
+<td>0.01</td>
+<td>0.05</td>
+<td align="center">0.5</td>
+<td>0.01</td>
+<td>0</td>
+<td>34</td>
+<td>35</td>
+<td>18</td>
+<td>98</td>
+<td>12</td>
+<td>25</td>
+<td>1.4</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>空心菜</td>
+<td>24</td>
+<td>92.8</td>
+<td>1.4</td>
+<td>0.4</td>
+<td>4.3</td>
+<td>0.8</td>
+<td>2.1</td>
+<td>1.2</td>
+<td>0</td>
+<td>378.3</td>
+<td>0</td>
+<td>0.01</td>
+<td>0.1</td>
+<td align="center">0.7</td>
+<td>0.03</td>
+<td>0</td>
+<td>14</td>
+<td>52</td>
+<td>440</td>
+<td>78</td>
+<td>21</td>
+<td>37</td>
+<td>1.5</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>地瓜叶</td>
+<td>30</td>
+<td>91</td>
+<td>3.3</td>
+<td>0.6</td>
+<td>4.1</td>
+<td>1</td>
+<td>3.1</td>
+<td>1</td>
+<td>0</td>
+<td>1269.2</td>
+<td>0</td>
+<td>0.03</td>
+<td>0</td>
+<td align="center">0.44</td>
+<td>0.04</td>
+<td>0</td>
+<td>19</td>
+<td>21</td>
+<td>310</td>
+<td>85</td>
+<td>20</td>
+<td>30</td>
+<td>1.5</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>茼蒿</td>
+<td>16</td>
+<td>95</td>
+<td>1.8</td>
+<td>0.5</td>
+<td>1.7</td>
+<td>0.5</td>
+<td>1.6</td>
+<td>1</td>
+<td>0</td>
+<td>503.3</td>
+<td>0</td>
+<td>0.03</td>
+<td>0.03</td>
+<td align="center">0.5</td>
+<td>0.08</td>
+<td>0</td>
+<td>7</td>
+<td>53</td>
+<td>390</td>
+<td>40</td>
+<td>16</td>
+<td>25</td>
+<td>3.3</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>红笕菜</td>
+<td>22</td>
+<td>92</td>
+<td>3</td>
+<td>0.3</td>
+<td>3</td>
+<td>0.7</td>
+<td>2.6</td>
+<td>1.7</td>
+<td>0</td>
+<td>1690</td>
+<td>0</td>
+<td>0.01</td>
+<td>0.16</td>
+<td align="center">0.4</td>
+<td>0.07</td>
+<td>0</td>
+<td>21</td>
+<td>14</td>
+<td>380</td>
+<td>191</td>
+<td>60</td>
+<td>530</td>
+<td>12</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>芥蓝</td>
+<td>26</td>
+<td>92</td>
+<td>2.4</td>
+<td>0.5</td>
+<td>3.9</td>
+<td>0.8</td>
+<td>1.9</td>
+<td>1.2</td>
+<td>0</td>
+<td>717.5</td>
+<td>0</td>
+<td>0</td>
+<td>0.01</td>
+<td align="center">0.18</td>
+<td>0.04</td>
+<td>0</td>
+<td>0</td>
+<td>55</td>
+<td>222</td>
+<td>238</td>
+<td>33</td>
+<td>39</td>
+<td>1.9</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>高丽菜</td>
+<td>23</td>
+<td>93.5</td>
+<td>1.2</td>
+<td>0.3</td>
+<td>4.4</td>
+<td>0.5</td>
+<td>1.3</td>
+<td>0.6</td>
+<td>0</td>
+<td>5.7</td>
+<td>0</td>
+<td>0.02</td>
+<td>0.02</td>
+<td align="center">0.3</td>
+<td>0.07</td>
+<td>0</td>
+<td>33</td>
+<td>17</td>
+<td>150</td>
+<td>52</td>
+<td>11</td>
+<td>28</td>
+<td>0.3</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>清江菜</td>
+<td>16</td>
+<td>94.8</td>
+<td>1.7</td>
+<td>0.3</td>
+<td>2.2</td>
+<td>0.5</td>
+<td>2.1</td>
+<td>0.9</td>
+<td>0</td>
+<td>198.3</td>
+<td>0</td>
+<td>0.01</td>
+<td>0.07</td>
+<td align="center">0.5</td>
+<td>0.02</td>
+<td>0</td>
+<td>32</td>
+<td>37</td>
+<td>280</td>
+<td>80</td>
+<td>17</td>
+<td>28</td>
+<td>1.7</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>雪里红</td>
+<td>20</td>
+<td>94</td>
+<td>1.5</td>
+<td>0.2</td>
+<td>3.8</td>
+<td>0.7</td>
+<td>1.9</td>
+<td>0.5</td>
+<td>0</td>
+<td>338.3</td>
+<td>0</td>
+<td>0.02</td>
+<td>0.05</td>
+<td align="center">0.2</td>
+<td>0.02</td>
+<td>0</td>
+<td>29</td>
+<td>19</td>
+<td>280</td>
+<td>64</td>
+<td>11</td>
+<td>25</td>
+<td>0.9</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>菠菜</td>
+<td>22</td>
+<td>93</td>
+<td>2.1</td>
+<td>0.5</td>
+<td>3</td>
+<td>0.8</td>
+<td>2.4</td>
+<td>1.4</td>
+<td>0</td>
+<td>638.3</td>
+<td>0</td>
+<td>0.05</td>
+<td>0.08</td>
+<td align="center">0.5</td>
+<td>0.01</td>
+<td>0</td>
+<td>9</td>
+<td>54</td>
+<td>460</td>
+<td>77</td>
+<td>58</td>
+<td>45</td>
+<td>2.1</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>笕菜</td>
+<td>18</td>
+<td>93.9</td>
+<td>2.2</td>
+<td>0.6</td>
+<td>1.9</td>
+<td>0.6</td>
+<td>2.2</td>
+<td>1.4</td>
+<td>0</td>
+<td>214.2</td>
+<td>0</td>
+<td>0.03</td>
+<td>0.07</td>
+<td align="center">0.4</td>
+<td>0.01</td>
+<td>0</td>
+<td>15</td>
+<td>25</td>
+<td>530</td>
+<td>156</td>
+<td>37</td>
+<td>54</td>
+<td>4.9</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>莴苣</td>
+<td>11</td>
+<td>96.9</td>
+<td>0.6</td>
+<td>0.3</td>
+<td>1.9</td>
+<td>0.4</td>
+<td>0.8</td>
+<td>0.3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.02</td>
+<td>0.06</td>
+<td align="center">0.3</td>
+<td>0.01</td>
+<td>0</td>
+<td>2</td>
+<td>12</td>
+<td>130</td>
+<td>254</td>
+<td>8</td>
+<td>28</td>
+<td>0.4</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>莴苣叶</td>
+<td>16</td>
+<td>95</td>
+<td>1.7</td>
+<td>0.4</td>
+<td>2.1</td>
+<td>0.6</td>
+<td>1.7</td>
+<td>0.8</td>
+<td>0</td>
+<td>647.5</td>
+<td>0</td>
+<td>0.05</td>
+<td>0.06</td>
+<td align="center">0.4</td>
+<td>0.01</td>
+<td>0</td>
+<td>14</td>
+<td>49</td>
+<td>240</td>
+<td>34</td>
+<td>21</td>
+<td>30</td>
+<td>2.4</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>苜蓿芽</td>
+<td>21</td>
+<td>93.1</td>
+<td>3.7</td>
+<td>0.3</td>
+<td>2.3</td>
+<td>0.8</td>
+<td>2</td>
+<td>0.6</td>
+<td>0</td>
+<td>6.7</td>
+<td>0</td>
+<td>0.08</td>
+<td>0.1</td>
+<td align="center">0.2</td>
+<td>0.06</td>
+<td>0</td>
+<td>4</td>
+<td>35</td>
+<td>300</td>
+<td>35</td>
+<td>33</td>
+<td>93</td>
+<td>1</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>发菜</td>
+<td>275</td>
+<td>18.5</td>
+<td>19.9</td>
+<td>0.2</td>
+<td>56.7</td>
+<td>3.2</td>
+<td>20.4</td>
+<td>4.7</td>
+<td>0</td>
+<td>0</td>
+<td>1.29</td>
+<td>0.2</td>
+<td>1.07</td>
+<td align="center">3.2</td>
+<td>1.76</td>
+<td>0</td>
+<td>0</td>
+<td>136</td>
+<td>174</td>
+<td>1263</td>
+<td>242</td>
+<td>132</td>
+<td>34</td>
+<td>2.7</td>
+</tr>
+<tr>
+<td>油菜</td>
+<td>23</td>
+<td></td>
+<td>1.8</td>
+<td>0.5</td>
+<td></td>
+<td></td>
+<td>1.1</td>
+<td></td>
+<td>0</td>
+<td>620</td>
+<td>0</td>
+<td></td>
+<td>0.7</td>
+<td align="center"></td>
+<td></td>
+<td>0</td>
+<td>36</td>
+<td>55.8</td>
+<td>210</td>
+<td>108</td>
+<td>22</td>
+<td>39</td>
+<td>1.2</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>黄瓜</td>
+<td>15</td>
+<td></td>
+<td>0.8</td>
+<td>0.2</td>
+<td></td>
+<td></td>
+<td>0.5</td>
+<td></td>
+<td>0</td>
+<td>15</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td>0</td>
+<td>9</td>
+<td>4.9</td>
+<td>102</td>
+<td>24</td>
+<td>15</td>
+<td>24</td>
+<td>0.5</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>西葫芦</td>
+<td>18</td>
+<td></td>
+<td>0.8</td>
+<td>0.2</td>
+<td></td>
+<td></td>
+<td>0.6</td>
+<td></td>
+<td>0</td>
+<td>5</td>
+<td>0.34</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td>0</td>
+<td>6</td>
+<td>5</td>
+<td>92</td>
+<td>15</td>
+<td>9</td>
+<td>17</td>
+<td>0.3</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>南瓜</td>
+<td>22</td>
+<td></td>
+<td>0.7</td>
+<td>0.1</td>
+<td></td>
+<td></td>
+<td>0.8</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0.36</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td>0</td>
+<td>8</td>
+<td>0.8</td>
+<td>145</td>
+<td>16</td>
+<td>8</td>
+<td>24</td>
+<td>0.4</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>西红柿</td>
+<td>26</td>
+<td>92.9</td>
+<td>0.9</td>
+<td>0.2</td>
+<td>5.5</td>
+<td>0.6</td>
+<td>1.2</td>
+<td>0.5</td>
+<td>0</td>
+<td>84.2</td>
+<td>0</td>
+<td>0.02</td>
+<td>0.02</td>
+<td align="center">0.6</td>
+<td>0.06</td>
+<td>0</td>
+<td>21</td>
+<td>9</td>
+<td>210</td>
+<td>10</td>
+<td>12</td>
+<td>20</td>
+<td>0.3</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>圣女果</td>
+<td>35</td>
+<td>91.4</td>
+<td>1.4</td>
+<td>1.3</td>
+<td>5.4</td>
+<td>0.8</td>
+<td>1.4</td>
+<td>0.5</td>
+<td>0</td>
+<td>716.7</td>
+<td>0</td>
+<td>0.01</td>
+<td>0.04</td>
+<td align="center">0.5</td>
+<td>0.04</td>
+<td>0</td>
+<td>67</td>
+<td>17</td>
+<td>180</td>
+<td>17</td>
+<td>10</td>
+<td>21</td>
+<td>0.6</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>芦荟</td>
+<td>4</td>
+<td>99.1</td>
+<td>0.1</td>
+<td>0.4</td>
+<td>0.2</td>
+<td>0.1</td>
+<td>1.4</td>
+<td>0.2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.07</td>
+<td align="center">0.03</td>
+<td>0</td>
+<td>1.5</td>
+<td>18</td>
+<td>30</td>
+<td>36</td>
+<td>7</td>
+<td>2</td>
+<td>0.1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>木瓜</td>
+<td>52</td>
+<td>85</td>
+<td>0.8</td>
+<td>0.1</td>
+<td>13.4</td>
+<td>0.6</td>
+<td>1.7</td>
+<td>0.7</td>
+<td>0</td>
+<td>40.7</td>
+<td>0</td>
+<td>0.03</td>
+<td>0.41</td>
+<td align="center">0.4</td>
+<td>0</td>
+<td>0</td>
+<td>74</td>
+<td>4</td>
+<td>220</td>
+<td>18</td>
+<td>12</td>
+<td>10</td>
+<td>0.2</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>西瓜</td>
+<td>25</td>
+<td>93</td>
+<td>0.6</td>
+<td>0.1</td>
+<td>6</td>
+<td>0.1</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0</td>
+<td>126.7</td>
+<td>0</td>
+<td>0.02</td>
+<td>0.01</td>
+<td align="center">0.2</td>
+<td>0.04</td>
+<td>0</td>
+<td>8</td>
+<td>13</td>
+<td>100</td>
+<td>4</td>
+<td>13</td>
+<td>23</td>
+<td>0.3</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>草莓</td>
+<td>39</td>
+<td>89</td>
+<td>1.1</td>
+<td>0.2</td>
+<td>9.2</td>
+<td>0.8</td>
+<td>1.8</td>
+<td>0.5</td>
+<td>0</td>
+<td>3.3</td>
+<td>0</td>
+<td>0.01</td>
+<td>0.06</td>
+<td align="center">1.5</td>
+<td>0.03</td>
+<td>0</td>
+<td>66</td>
+<td>18</td>
+<td>180</td>
+<td>14</td>
+<td>13</td>
+<td>35</td>
+<td>0.5</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>富士苹果</td>
+<td>46</td>
+<td>87</td>
+<td>0.3</td>
+<td>0.2</td>
+<td>12.1</td>
+<td>0.5</td>
+<td>1.2</td>
+<td>0.4</td>
+<td>0</td>
+<td>4.2</td>
+<td>0</td>
+<td>0</td>
+<td>0.01</td>
+<td align="center">0.2</td>
+<td>0.05</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>110</td>
+<td>5</td>
+<td>4</td>
+<td>11</td>
+<td>0.2</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>柑橘</td>
+<td>40</td>
+<td>88.8</td>
+<td>0.5</td>
+<td>0.2</td>
+<td>10.2</td>
+<td>0.4</td>
+<td>1.7</td>
+<td>0.3</td>
+<td>0</td>
+<td>66.7</td>
+<td>0</td>
+<td>0.09</td>
+<td>0.1</td>
+<td align="center">0.14</td>
+<td>0.01</td>
+<td>0</td>
+<td>31</td>
+<td>4</td>
+<td>55</td>
+<td>24</td>
+<td>10</td>
+<td>15</td>
+<td>0.2</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>香蕉</td>
+<td>91</td>
+<td>74</td>
+<td>1.3</td>
+<td>0.2</td>
+<td>23.7</td>
+<td>0.4</td>
+<td>1.6</td>
+<td>0.8</td>
+<td>0</td>
+<td>2.3</td>
+<td>0</td>
+<td>0.03</td>
+<td>0.02</td>
+<td align="center">0.4</td>
+<td>0.29</td>
+<td>0</td>
+<td>10</td>
+<td>4</td>
+<td>290</td>
+<td>5</td>
+<td>23</td>
+<td>22</td>
+<td>0.3</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>火龙果</td>
+<td>50</td>
+<td>85.5</td>
+<td>1.1</td>
+<td>0.2</td>
+<td>1.9</td>
+<td>64.2</td>
+<td>0.3</td>
+<td>2.2</td>
+<td>0</td>
+<td>0</td>
+<td>0.04</td>
+<td>0.5</td>
+<td>0</td>
+<td align="center">0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<h2 id="29-感冒及肺炎"><a href="#29-感冒及肺炎" class="headerlink" title="29. 感冒及肺炎"></a>29. 感冒及肺炎</h2><h3 id="一-感冒的前期症状为："><a href="#一-感冒的前期症状为：" class="headerlink" title="一. 感冒的前期症状为："></a>一. 感冒的前期症状为：</h3><p>流鼻涕、鼻子冒泡、打喷嚏、明显比平常睡的时间长、经常用前肢蹭眼、食欲下降或拒食等。感冒其实并不算是严重的疾病，但若坐视不理的话，就可能导致慢性或急性肺炎，而且口腔炎也容易随之并发。感冒或肺炎常会由空气而传染，若你的陆龟已排除因空气传播而受感染的可能性(即饲养的陆龟群中没有任何一只感染病毒)，那么至少还要控制下列要求，才能使其感染的可能性降到最低：</p>
+<h4 id="1-多粉尘的环境（也易导致眼病或肺炎）"><a href="#1-多粉尘的环境（也易导致眼病或肺炎）" class="headerlink" title="1. 多粉尘的环境（也易导致眼病或肺炎）"></a>1. 多粉尘的环境（也易导致眼病或肺炎）</h4><h4 id="2-异物寄生或堵塞在鼻孔内"><a href="#2-异物寄生或堵塞在鼻孔内" class="headerlink" title="2. 异物寄生或堵塞在鼻孔内"></a>2. 异物寄生或堵塞在鼻孔内</h4><h4 id="3-不适当的温度或湿度"><a href="#3-不适当的温度或湿度" class="headerlink" title="3. 不适当的温度或湿度"></a>3. 不适当的温度或湿度</h4><h4 id="4-昼夜温差偏大"><a href="#4-昼夜温差偏大" class="headerlink" title="4. 昼夜温差偏大"></a>4. 昼夜温差偏大</h4><h4 id="5-缺少日晒且环境潮湿"><a href="#5-缺少日晒且环境潮湿" class="headerlink" title="5. 缺少日晒且环境潮湿"></a>5. 缺少日晒且环境潮湿</h4><h4 id="6-过于拥挤"><a href="#6-过于拥挤" class="headerlink" title="6. 过于拥挤"></a>6. 过于拥挤</h4><h4 id="7-营养失调"><a href="#7-营养失调" class="headerlink" title="7. 营养失调"></a>7. 营养失调</h4><h4 id="8-缺乏维生素A、C"><a href="#8-缺乏维生素A、C" class="headerlink" title="8. 缺乏维生素A、C"></a>8. 缺乏维生素A、C</h4><h4 id="9-通风不畅（也易导致肺炎）"><a href="#9-通风不畅（也易导致肺炎）" class="headerlink" title="9. 通风不畅（也易导致肺炎）"></a>9. 通风不畅（也易导致肺炎）</h4><h4 id="10-受到人类传染"><a href="#10-受到人类传染" class="headerlink" title="10. 受到人类传染"></a>10. 受到人类传染</h4><p> 感冒的预防之道 </p>
+<ol>
+<li><h5 id="确保维他命的充足"><a href="#确保维他命的充足" class="headerlink" title="确保维他命的充足"></a>确保维他命的充足</h5></li>
+</ol>
+<p>  可喂食蒲公英叶、羽衣甘蓝、南瓜及胡萝卜等维生素含量高的食物，如果无法提供的话，也可以用市售的维他命添加剂补充。将日常食物慢慢地转变成天然食品将对陆龟的健康大有帮助。供给它们大量而容易取得的人类食用蔬果也会对它们造成伤害。由于陆龟在野外每天都会花很多的时间觅食，而且它们所觅得的食物也多为它们体内所需的营养，它们可藉由觅食的过程获取足够的运动量，但是在人工饲育的环境里，每天都供给它们大量而容易取得的食物，它们不必花时间觅食，自然运动量减少，进而导致新陈代谢减缓，新陈代谢一减缓，便会使吃进去的营养很难充份地被吸收，而且人类食用的蔬果所含的营养成份通常不如天然食品，如此将无法供给所有的矿物质与维生素以维持陆龟的健康。营养失调是隐性的疾病，在初期你无法从外观看出异状，它也不会突然死亡，一切看起来都很好，但是几年后伤害便会不知不觉地产生。你的陆龟在平日可能会做日光浴，会吃，会睡，看起来很健康，但事实上它的健康逐渐恶化，等恶化到某一临界点后，一切的步调会完全错误。一旦当疾病发生时，平日在家等着吃喝的陆龟会比那些终日在外寻觅天然食物的陆龟来得容易死亡。活动较多的陆龟会有结实强健的肌肉，它的新陈代谢也会维持在最佳状态，而且它们对于维他命或矿物质的吸收也会较为充分，如此将可增强牠的免疫系统，给它坚固的保护。陆龟如果营养失调将导致它没有太多的抵抗力来对抗疾病的入侵，小小的感染就可能导致它们的死亡。</p>
+<ol start="2">
+<li><h5 id="由于新买的陆龟有可能是病源的带原者，因此新买的龟最好不要直接就放入既有的龟群内，而必须有一段隔离期，一般建议是三个月。"><a href="#由于新买的陆龟有可能是病源的带原者，因此新买的龟最好不要直接就放入既有的龟群内，而必须有一段隔离期，一般建议是三个月。" class="headerlink" title="由于新买的陆龟有可能是病源的带原者，因此新买的龟最好不要直接就放入既有的龟群内，而必须有一段隔离期，一般建议是三个月。"></a>由于新买的陆龟有可能是病源的带原者，因此新买的龟最好不要直接就放入既有的龟群内，而必须有一段隔离期，一般建议是三个月。</h5></li>
+<li><h5 id="避免压力，造成压力的原因不外下列方面："><a href="#避免压力，造成压力的原因不外下列方面：" class="headerlink" title="避免压力，造成压力的原因不外下列方面："></a>避免压力，造成压力的原因不外下列方面：</h5></li>
+</ol>
+<h6 id="1-猫狗等宠物惊扰龟龟"><a href="#1-猫狗等宠物惊扰龟龟" class="headerlink" title="(1) 猫狗等宠物惊扰龟龟"></a>(1) 猫狗等宠物惊扰龟龟</h6><h6 id="2-其它陆龟的竞争或侵略"><a href="#2-其它陆龟的竞争或侵略" class="headerlink" title="(2) 其它陆龟的竞争或侵略"></a>(2) 其它陆龟的竞争或侵略</h6><h6 id="3-允许小孩与陆龟不当地玩耍"><a href="#3-允许小孩与陆龟不当地玩耍" class="headerlink" title="(3) 允许小孩与陆龟不当地玩耍"></a>(3) 允许小孩与陆龟不当地玩耍</h6><h6 id="4-不适当的喂食"><a href="#4-不适当的喂食" class="headerlink" title="(4) 不适当的喂食"></a>(4) 不适当的喂食</h6><p>  压力会造成龟龟体内的生化改变，促使抑制免疫系统的类固醇产生，因此对于同一感染源，压力大的陆龟会较没有压力的陆龟来得容易死亡。压力对陆龟的健康与抵抗力有长远的影响。</p>
+<ol start="4">
+<li><h5 id="避免让陆龟睡在太潮湿的区域，夜间尽量提供它们干燥的环境进行睡眠。过于潮湿会使它们产生呼吸方面的毛病。（除对湿度要求很高的品种外）"><a href="#避免让陆龟睡在太潮湿的区域，夜间尽量提供它们干燥的环境进行睡眠。过于潮湿会使它们产生呼吸方面的毛病。（除对湿度要求很高的品种外）" class="headerlink" title="避免让陆龟睡在太潮湿的区域，夜间尽量提供它们干燥的环境进行睡眠。过于潮湿会使它们产生呼吸方面的毛病。（除对湿度要求很高的品种外）"></a>避免让陆龟睡在太潮湿的区域，夜间尽量提供它们干燥的环境进行睡眠。过于潮湿会使它们产生呼吸方面的毛病。（除对湿度要求很高的品种外）</h5></li>
+</ol>
+<p>  感染后的治疗对策（由于国内没有很专业的龟病治疗机构，所以只有自己动手治疗。） </p>
+<p>  首先，检查鼻孔内是否有异物。若有，用干净的纱布擦拭后立刻将其移除并进行加温及观察，多直接照射阳光。然后，按照所养陆龟的温度要求，对饲养箱内陆龟睡眠区域的温度进行改善。不可过高、过低或忽高忽低，同时补充爬虫专用的综合维生素，但要小心不要过量。若一个礼拜补充一次，则剂量以1000~5000iu为宜。如果2-3天症状仍然存在，就要进行及时治疗。一般以土霉素片、强力霉素片及四环素片为主，每日一次10mg&#x2F;kg，用温水化开后再用细吸管灌服或将整片放入36-38度的温水中浸泡龟龟40分钟（对有饮水习惯的龟有效）。最佳的用药时间是每天傍晚左右，尽量在龟龟夜间睡眠前治疗。若夜间气候潮湿或寒冷时，最好把龟龟移至室内温暖的箱子内。治疗时期大概要持续5-10天左右，直到症状消失不再发生为止。切忌乱用药物！ </p>
+<p>  若前述的治疗方式有效，则在龟龟治愈后，要将导致感冒的影响因素(例如压力、营养失调、潮湿等)予以根除，以免复发。 </p>
+<p>  有些感染很复杂，上述对策未必能够奏效。有些感染甚至有一个以上的感染源在进行交互作用，感冒也可能使得病情变得复杂而并发严重的急性肺炎或慢性肺炎，其症状为：经常大量饮水，鼻子流稠液，呼吸声比以前大并张嘴呼吸，嘴边有白色黏液或吐泡沫，拒食直至死亡。这时必须立即进行抗生素治疗，例如：服用阿莫西林可溶片（益萨林），每日一次20mg&#x2F;kg连续三天；肌肉注射阿莫西林钠、庆大霉素（毒性较大），但二者不可共用！注射部位在前肢的后部，药量根据龟的体重10mg&#x2F;kg计算。先用碘酒或酒精消毒注射部位，再使用儿童针头使之与注射部位呈45度角迅速插入皮下肌肉（以不扎到骨骼为佳）0.5-1cm，缓慢推入。由于陆龟的新陈代谢速度缓慢，而药物会在其体内逐渐增强药效，若间隔时间太短，将使药物累积至有害的程度，所以大概每隔48-72小时治疗一次，注射1-3次。</p>
+<p>  必须注意的是，在治疗肺炎期间要为陆龟保持好温度，这样可以加快新陈代谢与药物分布的速度，同时也会增强其免疫系统。建议将温度维持在摄氏28~32度之间，在这段期间内必须注意陆龟体内的水合作用，而且要予以维持体内的水分，并补充综合维生素及电解质。</p>
+<p>  补充灌服的方法：找个很小的容器把药片溶在温水里，再找个口服液用的吸管，吸一些（药量根据龟的大小自己掌握），用舌头顶住吸管一头，将另一头插入龟嘴内的舌头后方（将龟竖立），避免药液流入气管。送开舌头药液自然就会流进去，或者轻轻的吹进去。这种方法无论是给龟用药或是补充各种营养品，都比药浴和将药或营养物质抹在食物上实用。但唯一的缺点就是不容易翘开它的嘴巴。为了爱龟的健康，耐心点吧。</p>
+<p>  最后要提及的是，龟感与人类的感冒不同，所以人吃的感冒药不适合龟龟。还有并不是给龟龟时间它们就会自己痊愈。龟龟感冒的时间愈长，相对地就愈难恢复。感冒会造成龟龟的死亡，千万别让你的龟龟成为下一个牺牲者，如果可以的话，每天例行性地检查龟龟的鼻孔，如果有发现任何的鼻水流出，也要立即为它们进行防止或治疗。 </p>
+<h2 id="30-陆龟饲料"><a href="#30-陆龟饲料" class="headerlink" title="30. 陆龟饲料"></a>30. 陆龟饲料</h2><h3 id="一-T-Rex陆龟饲料"><a href="#一-T-Rex陆龟饲料" class="headerlink" title="一. T-Rex陆龟饲料"></a>一. T-Rex陆龟饲料</h3><p>现在喜欢给陆龟饲料的饲主基本都会推崇T-Rex饲料</p>
+<p>这归功于T-Rex饲料合理的营养比例和良好的适口性</p>
+<p>用过的人都知道T-Rex饲料有股及其诱人的味道，会令你的龟龟无法拒绝</p>
+<p>不过T-Rex也有它值得注意的地方，比如色素成分</p>
+<p>这种人工的化合物多少会对龟龟脏器有影响</p>
+<p>长期大量喂食很可能后果不堪（当然～还没有相关报道……）</p>
+<p>不过不得不说的还是T-Rex确实不错     </p>
+<h3 id="二-PrettyPets-陆龟饲料"><a href="#二-PrettyPets-陆龟饲料" class="headerlink" title="二.PrettyPets-陆龟饲料"></a>二.PrettyPets-陆龟饲料</h3><p>之前使用，现在较少。因为无存货。货源比较少，买不到。</p>
+<p>饲料合理的营养比例和良好的适口性。我的龟喜欢，这种饲料有着很浓的香草气味，泡水不散。</p>
+<p>天然成分高，基本就是一些疏果和牧草成分，可以整颗喂食，也可以碾碎拌在菜里面给，确实是不错的饲料。</p>
+<p>天然蛋白质8%，天然脂肪3%，天然纤维13%，水分10%，灰6%，维他命A、D3、E、铜等及强化钙质，100%纯植物产品，高纤低脂…</p>
+<h3 id="三-Herp-Craft陆龟饲料"><a href="#三-Herp-Craft陆龟饲料" class="headerlink" title="三.Herp-Craft陆龟饲料"></a>三.Herp-Craft陆龟饲料</h3><p>这是日本陆龟饲料</p>
+<p>使用一段时间以后觉得效果还是不错的</p>
+<p>而且成分比例恰当，适口性也好</p>
+<p>特别难能可贵的是，没有太多人工色素和防腐剂。</p>
+<p>基本就是一些牧草成分，可以整颗喂食，也可以碾碎拌在菜里面给。</p>
+<p>确实是不错的饲料。</p>
+<h3 id="四-德国JBL"><a href="#四-德国JBL" class="headerlink" title="四. 德国JBL"></a>四. 德国JBL</h3><p>泡水不散，有点药味。开始龟可能不会吃，但一旦尝试后就会无法拒绝。可惜没有钙磷比例的说。</p>
+<p>营养成分：维生素A-25000ie；维生素D3-2000ie；维生素E-300mg；维生素C-200mg；天然粗蛋白质16%；</p>
+<p>粗脂肪3%；粗纤维6%；粗灰粉13%;</p>
+<p>无任何人工色素和防腐剂。</p>
+<h3 id="五-台湾龟叟"><a href="#五-台湾龟叟" class="headerlink" title="五.台湾龟叟"></a>五.台湾龟叟</h3><p>不含任何人工色素和防腐剂。泡水不散，野草味。很早以前喂过，龟闻到就会吃。由于台湾龟叟饲料属于</p>
+<p>个人研制再加上运输的问题，所以货源比较少。</p>
+<p>营养成分：粗蛋白质8%；粗脂肪3%；粗纤维10%；粗灰粉16%；水分11%；钙16%；磷2%。</p>
+<h3 id="六-EXO成龟饲料"><a href="#六-EXO成龟饲料" class="headerlink" title="六.EXO成龟饲料"></a>六.EXO成龟饲料</h3><p>其所列成分如下：</p>
+<p>蛋白质(最少)18。5%，粗脂肪(最少)4。5%，粗脂肪(最大限度)11。0% </p>
+<p>湿度(最大限度)，10。0% 灰(最大限度)7。5% ，钙(最少)1。05%</p>
+<p>磷(最少)0。67%</p>
+<p>蛋白含量18。5％有些偏高</p>
+<p>不宜作为主食</p>
+<p>还有一个问题，仔细看袋子的上面有明显的“ADULT”字样</p>
+<p>叙述该饲料是成龟饲料，不适合喂食幼龟</p>
+<p>这饲料容易分散，用水泡开后拌在菜里面效果不错</p>
+<p>对于钙粉维生素粉的附着也很不错</p>
+<h3 id="七-Tropical-Bio-REPT-L-陆龟饲料"><a href="#七-Tropical-Bio-REPT-L-陆龟饲料" class="headerlink" title="七. Tropical - Bio REPT-L-陆龟饲料"></a>七. Tropical - Bio REPT-L-陆龟饲料</h3><p>颗粒高钙矿物质饲料，高维他命，在味道上有很好的诱引效果，会令你的龟龟无法拒绝。</p>
+<p>原料为：谷类产品，水果和疏菜，紫花苜蓿，酵母菌，甲壳类，菜油，鱼油，矿物质和，维他命，着色剂和抗氧化剂。</p>
+<p>值得注意的地方色素成分高，饲料色彩和T-Rex很相似花花绿绿的…</p>
+<p>蛋白含量30.0%，太高</p>
+<p>天然粗蛋白30.0%，天然脂肪3.0%，粗纤维最大：4.5%，矿物质最大：9.0%，湿度：8.0%。</p>
+<p>维他命增加每公斤：维他命A 11，200 IU，维他命B3 1，150 IU，维他命E 80mg，维他命 C 45mg。</p>
+<h3 id="八-zoomed陆龟箱龟饲料"><a href="#八-zoomed陆龟箱龟饲料" class="headerlink" title="八. zoomed陆龟箱龟饲料"></a>八. zoomed陆龟箱龟饲料</h3><p>于不严格草食性陆龟…。蛋白质25％～脂肪5％</p>
+<p>这些不适合作为草食性陆龟主食的。</p>
+<p>其实人家商家就已经叙述瞭“Box turtle &amp; Tortoise” </p>
+<p>都知道箱龟是杂食的，满足了箱龟就不可能适合草食性陆龟</p>
+<p>不过这饲料也是容易分散</p>
+<p>拌在菜里面给的话，平衡一下成分比例还是不错的</p>
+<p>对于钙粉和维生素粉的附着性也比较好</p>
+<p>不过这饲料也有股味，也许你的龟龟并不喜欢</p>
+<p>对于以上这些蛋白质含量比较高的饲料，尽量少给纯草食性龟龟吃</p>
+<p>而对于缅陆红腿之类的不严格草食性陆龟来说，适量的给一些还是有好处</p>
+<h3 id="九-Rep-Cal陆龟饲料"><a href="#九-Rep-Cal陆龟饲料" class="headerlink" title="九. Rep-Cal陆龟饲料"></a>九. Rep-Cal陆龟饲料</h3><p>饲料形状色彩和T-Rex很相似花花绿绿的</p>
+<p>但是个子稍稍大一些～香味儿也更加刺鼻一些</p>
+<p>适口性也比T-Rex稍稍差一些～没T-Rex软</p>
+<p>从成分比例可以看出～蛋白质比例达到19％</p>
+<p>有些偏高了～所以不建议作为草食性陆龟的主食</p>
+<p>以配餐补充的形式为宜</p>
+<p>  十. zoolife陆龟饲料</p>
+<h3 id="尽量避免喂食该饲料给您的草食性陆龟"><a href="#尽量避免喂食该饲料给您的草食性陆龟" class="headerlink" title="尽量避免喂食该饲料给您的草食性陆龟"></a>尽量避免喂食该饲料给您的草食性陆龟</h3><p>成分不当～该饲料没没有明确的成分表</p>
+<p>该饲料闻上去有股刺鼻的腥味</p>
+<p>由此判断其中必然含有动物蛋白的成分，所以根本不适合草食性陆龟</p>
+<p>特别是苏和星这种极易结石的品种，尽量避免喂食</p>
+<p>当然了缅陆、红腿、黄腿倒是可以间或的喂食一些。</p>
+<h2 id="31-陆龟饲养湿度"><a href="#31-陆龟饲养湿度" class="headerlink" title="31.陆龟饲养湿度"></a>31.陆龟饲养湿度</h2><p>如果说温度设定错误，会造成龟龟立即性的问题，那么湿度环境营造错误，那么影响的程度则是缓慢但却深远的，如果提供的湿度条件有问题，虽然不会造成立即的威胁，可是长期饲养在一个错误湿度的条件下，对龟龟的杀伤力则更大，往往发现时，大都为时已晚。</p>
+<p>  湿度系指水分在空气所含的比例，与温度对爬虫的影响一样重要，但是一般饲主较注重温度，而忽略了湿度的环境营造，造成爬虫长期饲养下的种种问题，以干燥物种为例，长期处于潮湿环境，容易衍生呼吸系统与肠胃道上的疾病，而潮湿物种长期居住在干燥环境，加上水源不足，则较容易发生眼疾、脱水及尿酸结晶等现象，其它因湿度不适应而衍生出来的种种问题，则大多不为人知或需要长时间去验证。</p>
+<p>  以下是作者个人对湿度之于各种陆龟的条件看法，虽然不完全具长期观察及实验证明，但是这些常见的陆龟，作者都养过或帮朋友养过，所以提出这样的看法，不保证绝对正确，但应该相差不大。我先将常见的陆龟，以湿度要求程度的不同，大致上区分为六大类型(参考表一)：</p>
+<p><strong>长期饲养环境之湿度一览表(一)</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>代表物种</th>
+<th>湿度百分比</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>绝对干燥型</td>
+<td>豹龟、挺胸龟、阿根廷陆龟、饼干龟、埃及陆龟</td>
+<td>20%~40%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>干燥型</td>
+<td>星龟、赫曼龟、四趾陆龟、缘翘龟、苏卡达</td>
+<td>30%~50%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>一般型</td>
+<td>辐射龟、亚达伯拉、折背龟全属</td>
+<td>40%~60%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>偏潮湿型</td>
+<td>缅甸星龟陆龟、蛛网龟、扁壳陆龟</td>
+<td>50%~70%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>潮湿型</td>
+<td>红腿龟、黄腿龟、黄头象龟、西里佩斯</td>
+<td>70%以上</td>
+</tr>
+<tr>
+<td>6</td>
+<td>绝对潮湿型</td>
+<td>靴脚陆龟、麒麟龟（凹甲）</td>
+<td>80%以上</td>
+</tr>
+</tbody></table>
+<p>当然也有特殊案例，例如苏卡达即使是适合(2)干燥型，可是在(5)潮湿型环下依然可以适应的不错。目前作者因为空间问题，暂时将喜欢(5)潮湿型的红腿龟养在和星龟一样的(2)干燥型环境，牠还是很会吃，精神也很好——因此，以上数据只是针对个别物种所提出，在长期饲养下最佳的湿度条件，但仅供参考。</p>
+<p>  由于养龟者大都同时拥有各种陆龟，碍于空间问题，无法兼顾到每种龟龟的湿度需求，因此，在此对饲养者提供以下的折衷建议，若无法做到完全适合湿度条件的环境，则可以退而求其次的以上一级或下一级的环境饲养(附表二说明)：</p>
+<p><strong>长期饲养环境之湿度一览表(二)</strong></p>
+<table>
+<thead>
+<tr>
+<th>物种名</th>
+<th>最适合环境</th>
+<th>可容许环境</th>
+<th>危险的环境</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>豹龟</td>
+<td>1</td>
+<td>2</td>
+<td>4、5、6</td>
+</tr>
+<tr>
+<td>挺胸龟</td>
+<td>1</td>
+<td>2</td>
+<td>4、5、6</td>
+</tr>
+<tr>
+<td>阿根廷陆龟</td>
+<td>1</td>
+<td>2</td>
+<td>4、5、6</td>
+</tr>
+<tr>
+<td>饼干龟</td>
+<td>1</td>
+<td>2</td>
+<td>4、5、6</td>
+</tr>
+<tr>
+<td>埃及陆龟</td>
+<td>1</td>
+<td>2</td>
+<td>4、5、6</td>
+</tr>
+<tr>
+<td>星龟</td>
+<td>2</td>
+<td>1、3</td>
+<td>4、5、6</td>
+</tr>
+<tr>
+<td>赫曼陆龟</td>
+<td>2</td>
+<td>1、3</td>
+<td>5、6</td>
+</tr>
+<tr>
+<td>四趾陆龟</td>
+<td>2</td>
+<td>1、3</td>
+<td>5、6</td>
+</tr>
+<tr>
+<td>缘翘龟</td>
+<td>2</td>
+<td>1、3</td>
+<td>5、6</td>
+</tr>
+<tr>
+<td>苏卡达</td>
+<td>2</td>
+<td>1、3、4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>辐射龟</td>
+<td>3</td>
+<td>2、4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>亚达伯拉</td>
+<td>3</td>
+<td>2、4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>折背龟</td>
+<td>3</td>
+<td>2、4</td>
+<td>5、6</td>
+</tr>
+<tr>
+<td>缅甸星龟陆龟</td>
+<td>4</td>
+<td>3、5</td>
+<td>1、6</td>
+</tr>
+<tr>
+<td>蛛网龟</td>
+<td>4</td>
+<td>3、5</td>
+<td>1、6</td>
+</tr>
+<tr>
+<td>扁壳陆龟</td>
+<td>4</td>
+<td>3、5</td>
+<td>1、6</td>
+</tr>
+<tr>
+<td>红腿龟</td>
+<td>5</td>
+<td>4、6</td>
+<td>1、2</td>
+</tr>
+<tr>
+<td>黄腿龟</td>
+<td>5</td>
+<td>4、6</td>
+<td>1、2</td>
+</tr>
+<tr>
+<td>黄头象龟</td>
+<td>5</td>
+<td>4、6</td>
+<td>1、2</td>
+</tr>
+<tr>
+<td>西里佩斯</td>
+<td>5</td>
+<td>4、6</td>
+<td>1、2</td>
+</tr>
+<tr>
+<td>靴脚陆龟</td>
+<td>6</td>
+<td>4、5</td>
+<td>1、2</td>
+</tr>
+<tr>
+<td>麒麟龟凹甲</td>
+<td>6</td>
+<td>4、5</td>
+<td>1、2、3</td>
+</tr>
+</tbody></table>
+<p>作者注意到一个现象，虽说每一物种都有其适合的湿度条件，可是大部分越干燥的物种，对湿度条件的要求也越高，例如豹龟、阿根廷＆挺胸龟等，而潮湿物种忍受湿度条件异常的宽容度较大，如红腿、黄腿＆黄头，不过还是有特例，那就是麒麟龟对湿度的几近苛求。</p>
+<p>  顺便一提，大多数陆龟对温度的要求，可以就对湿度的要求来作参考，也就是说，要求越干燥的物种，相对的也需要越高温，而要求越潮湿的物种，相对的越能容忍低温，不过也非绝对一致：</p>
+<p>  例外一：星龟对温度的要求高于豹龟,但对湿度的要求则不如豹龟干燥</p>
+<p>  例外二：四趾陆龟属于偏干燥型龟种，对”低温”的容忍度却高于”高温”</p>
+<p>  例外三：沙漠型陆龟(如Gopherus全属，埃及陆龟等)虽然要求绝对干燥，温度方面则倾向要求较高的日夜温差，在其原产地，日夜温差甚至高达50度</p>
+<p>  湿度的营造也是常困扰饲主的一个问题，提高湿度可以使用无菌垫屑、水苔等为底材，甚至配合沼泽造景用的水气喷雾器，就足以应付各种高湿度物种。干燥型物种要求的低湿度环境，可以利用除湿机、除湿棒及防潮剂来改善，饲养箱则建议使用木板**，因为木材能吸水气，有助于保持场所的干燥性，配合唐山土或其它吸水性强的土(石或沙)为底材，可以克服所有干燥型物种的需求</p>
+<ol start="32">
+<li><h2 id="选购指南"><a href="#选购指南" class="headerlink" title="选购指南"></a>选购指南</h2></li>
+</ol>
+<p>每年的六至九月份是选购陆龟的最佳季节，所以在这给大家说明一下购买时的要领。</p>
+<p>在饲养陆龟前，首先必须对你所购买的龟种有所了解。这部分资料可以从书籍、杂志或国内外相关网站中搜寻。有了基本的概念后，方可就自身的条件进行考量所欲饲养的龟种。一般而言，在选择龟种时，水龟与陆龟的考量点会有些差异。在水龟方面，最重要的是检查其有无外伤或溃烂，至于其他部分，有些则与陆龟有相似之处。就陆龟而言，在选择龟种时大致上应考虑以下方面： </p>
+<h3 id="一、体型大小（种类）"><a href="#一、体型大小（种类）" class="headerlink" title="一、体型大小（种类）"></a>一、体型大小（种类）</h3><p>部分初养者认为体形越小的龟越可爱，虽然它们可爱但饲养难度较大。一是开食不久且壳不硬，二是抵抗力较差，对环境饲养的要求及死亡率都高于亚成体。所以在选购时尽量选择背甲在7厘米以上、体重在40克以上的陆龟。如果是购买要繁殖的个体，选择在500克左右的比较适宜。</p>
+<p>有些陆龟在体质上较为娇弱或变得脆弱，并不适合初学者入门，如乒乓星、荷叶折背、缅甸 陆龟等至于黄腿、四爪陆龟、CB个体的红腿、欧洲陆龟、赫曼陆龟、苏卡达、豹龟等皆可算是体质强健且刻苦耐劳的龟种。</p>
+<p>体型比较小的入门品种有欧陆、赫曼、四爪等；</p>
+<p>体型比较大的入门品种有缅星、红腿、黄腿、缘翘等；</p>
+<p>体型特别大的入门品种有苏卡达、放射、豹龟等陆龟，但作为初学者，一般不要从饲养大型龟入手。</p>
+<p>在龟类中饲养难度比较大的品种有印度星龟、折背陆龟等。饲养难度特别大的品种有饼干龟、蛛网龟、凹甲、棕靴、黑靴等陆龟。不要轻易饲养这些陆龟，肯定要有相当的饲养经验和专业的饲养环境后才能涉足。否则，将会给你带来经济上的损失和精神上的痛苦。</p>
+<h3 id="二、人工繁殖个体与野生个体"><a href="#二、人工繁殖个体与野生个体" class="headerlink" title="二、人工繁殖个体与野生个体"></a>二、人工繁殖个体与野生个体</h3><p>一般市面上的陆龟其来源通常可分为CB个体(captive-breed)、CR个体(captive-raised)与WC个体(wild-caught)三种。所谓CB个体是指人工繁殖的陆龟个体，一般来说，苏卡达、红腿、豹龟、辐射、亚达伯拉、赫曼、缘翘、欧陆等陆龟在国外多有繁殖场，因此较易看见人工繁殖个体(上述这些陆龟以CB个体居多，偶尔可见WC个体)。WC个体则是指野外捕获的陆龟个体，例如缅陆、凹甲、靴脚、印星、缅星、黄腿、折背、挺胸等多为野生个体。至于CR个体则是指经人工饲养一段时间的CB或WC个体，通常CB个体会较WC个体容易饲育，且较无寄生虫与疾病的问题。若打算进行繁殖，饲养过一段日子的CR个体会较WC个体来得容易**状况（WC个体通常需要几年的时间适应环境，并稳定地成长至繁殖周期出现）。有些品系的CB幼体比较娇弱，在人工饲育的环境下它要需要理想的环境条件以健康地成长。就新手而言，可以考虑从年纪稍长且较大一点的CB个体入门，通常这些CB个体的龟龄约为6个月至一年间。小心得提供适当的设备及食物通常可以使养龟者顺利地养大这些CB个体的幼龟。</p>
+<h3 id="三、个性"><a href="#三、个性" class="headerlink" title="三、个性"></a>三、个性</h3><p>就像人一样，陆龟也有不同的个性，有些害羞，有些外向，有些具有侵略性，有些又很神经质。通常比较有反应的，互动性佳的，或是看起来聪明的，都会比较讨喜。欧洲陆龟和四趾陆龟是蛮人性化的龟种，它们对食物的警觉性很高，甚至会吃你手上的食物并爬到你鞋子上乞食。红腿象龟则具外向的个性，苏卡达则是聪明又人性化，豹龟和主人的互动性相对来说则较疏离，不过这些都不是一定的，有时会因个体而有所差异。 </p>
+<h3 id="四、健康"><a href="#四、健康" class="headerlink" title="四、健康"></a>四、健康</h3><p>一般而言，CB个体会较WC个体来得容易饲养，因为它们较无寄生虫问题及开食难等问题，也比较健康。下面有几个用来判断健康的准则： </p>
+<ol>
+<li><h4 id="眼鼻是否正常："><a href="#眼鼻是否正常：" class="headerlink" title="眼鼻是否正常："></a>眼鼻是否正常：</h4><p>检查陆龟是否清醒，如果是健康的陆龟，其眼睛应是张得开且明亮有神的。半掩目的，红肿的，或流眼泪的眼睛都表示这只龟有罹患疾病的可能性。在选购时，可以观察它们的活动力与进食的情况，这是选择龟时的最佳指标。正常的陆龟眼睛不应该是凹陷的，并且其脸颊应该是呈圆状的，在其颊部不会有明显可见的线条。接著，便是检查它们的鼻孔，健康的龟鼻孔是乾净的，不会堵塞或有其他液体，闻上去也没有异臭。如果可以的话，用手指轻压它的喉部，假如做这个动作时它的鼻孔有液体喷出，表示这只龟可能有呼吸道方面的感染。张嘴或用力呼吸通常是肺炎的症状。另外，鼻孔相对较小或较窄的龟不建议购买。 </p>
+</li>
+<li><h4 id="检查进食情况："><a href="#检查进食情况：" class="headerlink" title="检查进食情况："></a>检查进食情况：</h4><p>一只健康的陆龟在它进食的时候，动作比较敏捷且能连续进食。而不是动作缓慢且时常间断；在放入食物后也会迅速的爬到食物跟前而不是不予理睬。</p>
+</li>
+<li><h4 id="测试肌肉的强度："><a href="#测试肌肉的强度：" class="headerlink" title="测试肌肉的强度："></a>测试肌肉的强度：</h4><p>用手拿起龟，惦惦看它的重量，健康的龟会有足够的重量。如果你觉得龟和它的体型相较起来过轻的话，那么可能是疾病的症兆。健康的陆龟会展现出它们肌肉的活力，最好的观察方是就是看它们强力缩回壳中的感觉，你可以在它们缩回壳中时轻轻扳开它们的前脚，测试它们肌肉的力道。四肢完全可以支撑起身体行走，尽量不要购买跛行的陆龟。 </p>
+</li>
+<li><h4 id="外壳是否有损伤："><a href="#外壳是否有损伤：" class="headerlink" title="外壳是否有损伤："></a>外壳是否有损伤：</h4><p>仔细检查背甲与腹甲是否有损伤、错甲或是有淤血的痕迹（除腹甲中线的肉色生长线外），观察它的四肢是否有任何的膨胀，趾甲是否有脱落。其次，检查眼睛及头部的两侧，看它的颊部是否肿胀。如果上述步骤你是从头顶上观察的话，你会发现健康的陆龟应该是两侧对称的。另外，背甲有光泽的优先购买。</p>
+</li>
+<li><h4 id="测量体重："><a href="#测量体重：" class="headerlink" title="测量体重："></a>测量体重：</h4><p>一般情况下，选择体重相对重点的龟购买。但此方法不合适选择易结石的龟种，避免挑到体内存有较大结石的陆龟。例如：苏卡达、印度星龟、赫曼。</p>
+</li>
+<li><h4 id="体外是否有寄生虫："><a href="#体外是否有寄生虫：" class="headerlink" title="体外是否有寄生虫："></a>体外是否有寄生虫：</h4><p>通常体外寄生虫会吸附在龟的颈部、四肢或四肢腋下、以及尾部。如发现，最好不要购买。</p>
+</li>
+<li><h4 id="检查喙部（嘴）："><a href="#检查喙部（嘴）：" class="headerlink" title="检查喙部（嘴）："></a>检查喙部（嘴）：</h4><p>检视喙部的四周，看看有无开裂、断裂或角质增生，如果有的话就不要购买。舌头为肉色，若发白说明肠胃不太好，建议谨慎购买。 </p>
+</li>
+<li><h4 id="检查泄殖腔："><a href="#检查泄殖腔：" class="headerlink" title="检查泄殖腔："></a>检查泄殖腔：</h4><p>泄殖腔位于尾巴的基部，应该是干净无肿胀和硬块的。如果泄殖腔口有水状的排泄物，则表示这只龟可能患有体内寄生虫病或肠炎的症状，如果有这种情况的话，必须检查饲育环境内陆龟的排泄物。</p>
+</li>
+<li><h4 id="检查排泄物："><a href="#检查排泄物：" class="headerlink" title="检查排泄物："></a>检查排泄物：</h4><p>通常水状的排泄物是典型寄生虫病及肠胃炎的症状。一只陆龟若有大量的水状排泄物，则表示它可能有消化方面的疾病。有一点必须注意的是，新进的陆龟可能在刚开始时都会有水状的排泄物，但在经过一段时间的照顾后，拉稀的情况会渐渐改善。假如它在任何方面都表现得很健康，但就是拉稀拉不停的话，则必须对其排泄物进行检查，看是否有虫体或虫卵。健康陆龟的粪便应该是柔软，呈长条圆柱固态，颜色深绿色或外表有白膜。若粪便呈松散状、颜色为红色或淡绿色，说明有肠胃问题不宜购买。选好龟后，最好泡下热水（水温40-45度），观察其排泄物。同时观察是否排酸：若有并成白色或乳色膏状可放心购买；若呈块状或渣石状最好不要购买；若什么也没有，要通过了解其他方面的状况判断结石的可能性后再购买。</p>
+</li>
+</ol>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E5%AE%A0%E7%89%A9/">#宠物</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2023/11/20/%E7%8E%9B%E5%A1%94%E3%80%81%E9%BB%84%E7%BC%98%E3%80%81%E9%B9%B0%E5%98%B4%E3%80%81%E9%BB%84%E5%96%89%E7%9A%84%E5%8C%BA%E5%88%86/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">玛塔·黄缘·鹰嘴·黄喉的区分</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/11/20/%E9%BB%84%E7%BC%98%E9%97%AD%E5%A3%B3%E9%BE%9F%E7%9A%84%E7%94%9F%E6%B4%BB%E4%B9%A0%E6%80%A7%E4%B8%8E%E5%85%BB%E6%AE%96%E6%8A%80%E6%9C%AF/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">黄缘闭壳龟的生活习性与养殖技术</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://talk.wqong.com.cn',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">陆龟饲养大全</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%8E%92%E9%85%B8%EF%BC%9A"><span class="nav-text">1.  排酸：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%9A%86%E8%83%8C%EF%BC%9A"><span class="nav-text">2. 隆背：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%99%92%E8%83%8C%EF%BC%9A"><span class="nav-text">3. 晒背：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%B3%A1%E6%BE%A1%EF%BC%9A"><span class="nav-text">4. 泡澡：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E7%BC%BA%E9%92%99%EF%BC%9A"><span class="nav-text">5. 缺钙：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E6%8B%92%E9%A3%9F%E3%80%81%E5%81%9C%E9%A3%9F%E5%92%8C%E5%A1%AB%E9%A3%9F%EF%BC%9A"><span class="nav-text">6. 拒食、停食和填食：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E6%B4%97%E8%8F%9C%EF%BC%9A"><span class="nav-text">7. 洗菜：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E6%9A%B4%E6%AF%99%EF%BC%9A"><span class="nav-text">8. 暴毙：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E4%B9%8C%E9%BE%9F%E4%B8%8E%E9%99%86%E9%BE%9F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-text">9. 乌龟与陆龟的区别：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E5%88%A4%E6%96%AD%E5%85%AC%E6%AF%8D%EF%BC%9A"><span class="nav-text">10. 判断公母：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E6%98%9F%E9%BE%9F%E3%80%81%E7%BC%85%E6%98%9F%E3%80%81%E7%BC%85%E9%99%86%E4%B8%BA%E4%BE%8B%EF%BC%9A"><span class="nav-text">以星龟、缅星、缅陆为例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E7%BA%A2%E8%85%BF%E3%80%81%E9%BB%84%E8%85%BF%E4%B8%BA%E4%BE%8B%EF%BC%9A"><span class="nav-text">以红腿、黄腿为例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E8%BE%90%E5%B0%84%E9%BE%9F%E4%B8%BA%E4%BE%8B%EF%BC%9A"><span class="nav-text">以辐射龟为例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E8%8B%8F%E5%8D%A1%E8%BE%BE%E5%92%8C%E8%B1%B9%E9%BE%9F%E4%B8%BA%E4%BE%8B%EF%BC%9A"><span class="nav-text">以苏卡达和豹龟为例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E6%AC%A7%E7%B3%BB%E9%99%86%E9%BE%9F%E4%B8%BA%E4%BE%8B%EF%BC%9A"><span class="nav-text">以欧系陆龟为例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E9%9D%B4%E8%84%9A%E9%99%86%E9%BE%9F%E4%B8%BA%E4%BE%8B%EF%BC%9A"><span class="nav-text">以靴脚陆龟为例：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-%E5%88%A4%E6%96%AD%E5%B9%B4%E9%BE%84%EF%BC%9A"><span class="nav-text">11. 判断年龄：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-%E4%BA%9A%E7%A7%8D%EF%BC%9A"><span class="nav-text">12. 亚种：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-%E7%94%9F%E9%95%BF%E7%BA%BF%EF%BC%88%E7%BA%B9%EF%BC%89%EF%BC%9A"><span class="nav-text">13. 生长线（纹）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-%E7%94%9F%E9%95%BF%E9%80%9F%E5%BA%A6%EF%BC%9A"><span class="nav-text">14. 生长速度：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-%E6%B7%B7%E5%85%BB%EF%BC%9A"><span class="nav-text">15. 混养：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-%E6%8A%A4%E7%94%B2%EF%BC%9A"><span class="nav-text">16. 护甲：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-%E9%94%99%E7%94%B2%EF%BC%88%E5%B0%91%E7%94%B2%EF%BC%89%EF%BC%9A"><span class="nav-text">17. 错甲（少甲）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#18-%E7%99%BD%E5%8C%96%E5%92%8C%E9%BB%84%E5%8C%96%EF%BC%9A"><span class="nav-text">18. 白化和黄化：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-%E9%A2%88%E7%9B%BE%EF%BC%9A"><span class="nav-text">19. 颈盾：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#20-%E9%BE%9F%E5%90%B8%EF%BC%9A"><span class="nav-text">20. 龟吸：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-CB%EF%BC%88captive-breed%EF%BC%89%E5%92%8CWC%EF%BC%88wild-caught%EF%BC%89%EF%BC%9A"><span class="nav-text">21. CB（captive-breed）和WC（wild-caught）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#22-%E8%BF%87%E5%86%AC%E8%AE%BE%E5%A4%87"><span class="nav-text">22. 过冬设备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23-%E9%A5%B2%E5%85%BB%E7%AE%B1"><span class="nav-text">23. 饲养箱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#24-%E6%9A%82%E6%97%B6%E6%97%A0%E4%BA%BA%E9%A5%B2%E5%85%BB%EF%BC%88%E7%9F%AD%E6%9C%9F%EF%BC%89%E4%B9%8B%E5%AF%B9%E7%AD%96%EF%BC%9A"><span class="nav-text">24. 暂时无人饲养（短期）之对策：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#25-%E4%B8%93%E7%94%A8%E9%A5%B2%E5%85%BB%E8%90%A5%E5%85%BB%E5%93%81"><span class="nav-text">25. 专用饲养营养品</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%88%AC%E8%99%AB%E4%B8%93%E7%94%A8%E9%92%99%E7%B2%89%EF%BC%9A"><span class="nav-text">爬虫专用钙粉：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%88%AC%E8%99%AB%E4%B8%93%E7%94%A8%E7%BB%B4%E7%94%9F%E7%B4%A0D3%E7%94%B5%E8%A7%A3%E8%B4%A8%E5%90%88%E5%89%82%EF%BC%9A"><span class="nav-text">爬虫专用维生素D3电解质合剂：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%88%AC%E8%99%AB%E4%B8%93%E7%94%A8%E7%BB%B4%E7%94%9F%E7%B4%A0%E7%B2%89%EF%BC%9A"><span class="nav-text">爬虫专用维生素粉：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%88%AC%E8%99%AB%E4%B8%93%E7%94%A8%E7%9F%BF%E7%89%A9%E8%B4%A8%EF%BC%9A"><span class="nav-text">爬虫专用矿物质：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%93%E7%94%A8%E9%99%86%E9%BE%9F%E9%A5%B2%E6%96%99%EF%BC%9A"><span class="nav-text">专用陆龟饲料：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#26-%E9%9D%9E%E4%B8%93%E7%94%A8%E6%B2%BB%E7%96%97%E8%90%A5%E5%85%BB%E5%93%81"><span class="nav-text">26. 非专用治疗营养品</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E6%96%B9%E7%94%B5%E8%A7%A3%E8%B4%A8%E8%91%A1%E8%90%84%E7%B3%96%EF%BC%9A"><span class="nav-text">复方电解质葡萄糖：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E7%BB%B4%E8%91%A1%E8%90%84%E7%B3%96%EF%BC%9A"><span class="nav-text">多维葡萄糖：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%91%A1%E8%90%84%E7%B3%96%E9%85%B8%E9%92%99%EF%BC%9A"><span class="nav-text">葡萄糖酸钙：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#27-%E8%BE%83%E9%80%82%E7%94%A8%E4%BA%8E%E7%BC%BA%E9%92%99%E6%88%96%E7%83%82%E7%94%B2%E7%96%BE%E7%97%85%E7%9A%84%E8%90%A5%E5%85%BB%E8%A1%A5%E7%BB%99%E3%80%82"><span class="nav-text">27. 较适用于缺钙或烂甲疾病的营养补给。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%85%E7%94%B8%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">缅甸陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%B0%E5%BA%A6%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">印度陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%B0%E5%BA%A6%E6%98%9F%E9%BE%9F%EF%BC%9A"><span class="nav-text">印度星龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%85%E7%94%B8%E6%98%9F%E9%BE%9F%EF%BC%9A"><span class="nav-text">缅甸星龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%B9%E7%94%B2%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">凹甲陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%B4%E8%84%9A%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">靴脚陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%A2%E8%85%BF%E8%B1%A1%E9%BE%9F%EF%BC%9A"><span class="nav-text">红腿象龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%84%E8%85%BF%E8%B1%A1%E9%BE%9F%EF%BC%9A"><span class="nav-text">黄腿象龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E7%88%AA%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">四爪陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%AB%E6%9B%BC%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">赫曼陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AC%A7%E6%B4%B2%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">欧洲陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B1%B9%E7%BA%B9%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">豹纹陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8B%8F%E5%8D%A1%E8%BE%BE%E9%BE%9F%EF%BC%9A"><span class="nav-text">苏卡达龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%BE%E5%B0%84%E9%99%86%E9%BE%9F%EF%BC%9A"><span class="nav-text">放射陆龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%9B%9B%E7%BD%91%E9%BE%9F%EF%BC%9A"><span class="nav-text">蛛网龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A5%BC%E5%B9%B2%E9%BE%9F%EF%BC%9A"><span class="nav-text">饼干龟：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8D%B7%E5%8F%B6%E6%8A%98%E8%83%8C%EF%BC%9A"><span class="nav-text">荷叶折背：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%9A%E8%BE%BE%E4%BC%AF%E6%8B%89%E8%B1%A1%E9%BE%9F%EF%BC%9A"><span class="nav-text">亚达伯拉象龟：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#28-%E9%99%86%E9%BE%9F%E9%A3%9F%E7%89%A9%E8%90%A5%E5%85%BB%E6%88%90%E5%88%86%E8%AF%A6%E8%A1%A8"><span class="nav-text">28. 陆龟食物营养成分详表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#29-%E6%84%9F%E5%86%92%E5%8F%8A%E8%82%BA%E7%82%8E"><span class="nav-text">29. 感冒及肺炎</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80-%E6%84%9F%E5%86%92%E7%9A%84%E5%89%8D%E6%9C%9F%E7%97%87%E7%8A%B6%E4%B8%BA%EF%BC%9A"><span class="nav-text">一. 感冒的前期症状为：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#30-%E9%99%86%E9%BE%9F%E9%A5%B2%E6%96%99"><span class="nav-text">30. 陆龟饲料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80-T-Rex%E9%99%86%E9%BE%9F%E9%A5%B2%E6%96%99"><span class="nav-text">一. T-Rex陆龟饲料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C-PrettyPets-%E9%99%86%E9%BE%9F%E9%A5%B2%E6%96%99"><span class="nav-text">二.PrettyPets-陆龟饲料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89-Herp-Craft%E9%99%86%E9%BE%9F%E9%A5%B2%E6%96%99"><span class="nav-text">三.Herp-Craft陆龟饲料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B-%E5%BE%B7%E5%9B%BDJBL"><span class="nav-text">四. 德国JBL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%94-%E5%8F%B0%E6%B9%BE%E9%BE%9F%E5%8F%9F"><span class="nav-text">五.台湾龟叟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AD-EXO%E6%88%90%E9%BE%9F%E9%A5%B2%E6%96%99"><span class="nav-text">六.EXO成龟饲料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%83-Tropical-Bio-REPT-L-%E9%99%86%E9%BE%9F%E9%A5%B2%E6%96%99"><span class="nav-text">七. Tropical - Bio REPT-L-陆龟饲料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AB-zoomed%E9%99%86%E9%BE%9F%E7%AE%B1%E9%BE%9F%E9%A5%B2%E6%96%99"><span class="nav-text">八. zoomed陆龟箱龟饲料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%9D-Rep-Cal%E9%99%86%E9%BE%9F%E9%A5%B2%E6%96%99"><span class="nav-text">九. Rep-Cal陆龟饲料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%BD%E9%87%8F%E9%81%BF%E5%85%8D%E5%96%82%E9%A3%9F%E8%AF%A5%E9%A5%B2%E6%96%99%E7%BB%99%E6%82%A8%E7%9A%84%E8%8D%89%E9%A3%9F%E6%80%A7%E9%99%86%E9%BE%9F"><span class="nav-text">尽量避免喂食该饲料给您的草食性陆龟</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#31-%E9%99%86%E9%BE%9F%E9%A5%B2%E5%85%BB%E6%B9%BF%E5%BA%A6"><span class="nav-text">31.陆龟饲养湿度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E8%B4%AD%E6%8C%87%E5%8D%97"><span class="nav-text">选购指南</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%BD%93%E5%9E%8B%E5%A4%A7%E5%B0%8F%EF%BC%88%E7%A7%8D%E7%B1%BB%EF%BC%89"><span class="nav-text">一、体型大小（种类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%BA%BA%E5%B7%A5%E7%B9%81%E6%AE%96%E4%B8%AA%E4%BD%93%E4%B8%8E%E9%87%8E%E7%94%9F%E4%B8%AA%E4%BD%93"><span class="nav-text">二、人工繁殖个体与野生个体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E4%B8%AA%E6%80%A7"><span class="nav-text">三、个性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%81%A5%E5%BA%B7"><span class="nav-text">四、健康</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Wqong&#39;s HOME</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        11 posts in total
+                    </span>
+                    
+                        <span>
+                            253.8k words in total
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/libs/mermaid.min.js"></script>
+
+    
+<script src="/js/plugins/mermaid.js"></script>
+
+
+
+
+    
+<script src="/js/libs/minimasonry.min.js"></script>
+
+    
+<script src="/js/plugins/masonry.js" type="module"></script>
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+    <div id="aplayer"></div>
+
+<script src="/js/libs/APlayer.min.js"></script>
+
+
+<script src="/js/plugins/aplayer.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":300,"height":600},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
